@@ -1,8 +1,30 @@
+@media screen and (max-width: 768px) and (orientation: portrait){
 html {
-  background: url("../img/bodyBack.jpg");
-    background-repeat: no-repeat;
-        background-attachment: fixed;
+  background: url("../img/backMobile.jpg");
     background-size: cover;
+    background-position: bottom;
+    margin: 0;
+}
+
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape){
+    html {
+        background: url("../img/backDesk.jpg");
+        background-size: cover;
+
+    }
+
+}
+@media screen and (min-width: 768px) {
+    html {
+        background: url("../img/backDesk.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+
+
+    }
+
 }
 
 .modal-mask {
