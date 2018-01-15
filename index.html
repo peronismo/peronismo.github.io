@@ -34,15 +34,16 @@
 
 <body>
 <div id="app">
-<!--
+
 <section id="resultados" style="display:block;">
 <div id="show">{{julioBarbaro1}}, {{julioBarbaro2}}, {{julioBarbaro3}}, {{julioBarbaro4}} </div>
 <div id="show2">{{miguelAngelPichetto1}}, {{miguelAngelPichetto2}}, {{miguelAngelPichetto3}}, {{miguelAngelPichetto4}}</div>
-<div id="show7">{{sergioMassa1}}, {{sergioMassa2}}, {{sergioMassa3}}, {{sergioMassa4}}</div>
-<div id="show3">{{guillermoMoreno1}}, {{guillermoMoreno2}}, {{guillermoMoreno3}}, {{guillermoMoreno4}}</div>
-<div id="show4">{{chinoNavarro1}}, {{chinoNavarro2}}, {{chinoNavarro3}}, {{chinoNavarro4}}</div>
-<div id="show5">{{chivoRossi1}}, {{chivoRossi2}}, {{chivoRossi3}}, {{chivoRossi4}}</div>
-<div id="show6">{{cuervoLarroque1}}, {{cuervoLarroque2}}, {{cuervoLarroque3}}, {{cuervoLarroque4}}</div>
+<div id="show3">{{sergioMassa1}}, {{sergioMassa2}}, {{sergioMassa3}}, {{sergioMassa4}}</div>
+<div id="show4">{{martinInsaurralde1}}, {{martinInsaurralde2}}, {{martinInsaurralde3}}, {{martinInsaurralde4}}</div>
+<div id="show5">{{guillermoMoreno1}}, {{guillermoMoreno2}}, {{guillermoMoreno3}}, {{guillermoMoreno4}}</div>
+<div id="show6">{{chinoNavarro1}}, {{chinoNavarro2}}, {{chinoNavarro3}}, {{chinoNavarro4}}</div>
+<div id="show7">{{chivoRossi1}}, {{chivoRossi2}}, {{chivoRossi3}}, {{chivoRossi4}}</div>
+<div id="show8">{{cuervoLarroque1}}, {{cuervoLarroque2}}, {{cuervoLarroque3}}, {{cuervoLarroque4}}</div>
 
 
 <div>  {{totales}}
@@ -50,7 +51,7 @@
    Primero {{primero}}
    Segundo {{segundo}}
    Diferencia {{diferencia}}
-   Ultimo {{ultimo}}</div>-->
+   Ultimo {{ultimo}}</div>
 </section>
 
     <section id="intro" class="hero is-fullheight is-info" v-if="intro">
@@ -106,22 +107,34 @@
 
                 <div class="columns">
                     <div class="column is-6" style="margin: auto 0">
-                        <p id="a7" class="is-size-3-desktop has-text-centered"> 7)Frenar el plan macrista de ajustes y negocios con el Estado. No podemos permitir nada que implique un retroceso en los derechos adquiridos en los 12 años de gobierno popular.</p></div>
+                        <p id="a8" class="is-size-3-desktop has-text-centered"> 8)Frenar el plan macrista de ajustes y negocios con el Estado. No podemos permitir nada que implique un retroceso en los derechos adquiridos en los 12 años de gobierno popular.</p></div>
                         <div class="column is-6 buttons has-addons is-centered is-large" style="margin: auto">
-                            <div class="column is-4 e" style="margin: auto">
-                            <span class="button" @click=sumar($event,17,3)>Muy de acuerdo</span>
-                            <span class="button" @click=sumar($event,17,1)>De acuerdo</span>
-                            <span class="button" @click=restar($event,17,1)>Desacuerdo</span>
-                            <span class="button" @click=restar($event,17,3)>Muy en desacuerdo</span>
+                            <div class="column is-4 " style="margin: auto">
+                            <span class="button" @click=sumar($event,18,3)>Muy de acuerdo</span>
+                            <span class="button" @click=sumar($event,18,1)>De acuerdo</span>
+                            <span class="button" @click=restar($event,18,1)>Desacuerdo</span>
+                            <span class="button" @click=restar($event,18,3)>Muy en desacuerdo</span>
                             </div>
                         </div>
                 </div>
+                        <div class="columns">
+                            <div class="column is-6" style="margin: auto 0">
+                                <p id="a4" class="is-size-3-desktop has-text-centered"> 4)Los opositores debemos proponer alternativas en temas puntuales como la inseguridad y la falta de obras de infraestructura. No le hago caso a quienes dicen que hay que oponerse a todo, la política es diálogo y encontrar puntos en común.  </p></div>
+                            <div class="column is-6 buttons has-addons is-centered is-large" style="margin: auto">
+                                <div class="column is-4" style="margin: auto">
+                                    <span class="button" @click=sumar($event,14,3)>Muy de acuerdo</span>
+                                    <span class="button" @click=sumar($event,14,1)>De acuerdo</span>
+                                    <span class="button" @click=restar($event,14,1)>Desacuerdo</span>
+                                    <span class="button" @click=restar($event,14,3)>Muy en desacuerdo</span>
+                                </div>
+                            </div>
+                        </div>
 
                 <div class="columns">
                      <div class="column is-6" style="margin: auto 0">
                                 <p id="a3" class="is-size-3-desktop has-text-centered"> 3)Creo que las fuerzas opositoras deben ofrecerle a la gente alternativas que no estén emparentadas ni con el anterior, que fue un gobierno de ladrones, ni con el actual, que es de ricos.</p></div>
                         <div class="column is-6 buttons has-addons is-centered is-large" style="margin: auto">
-                            <div class="column is-4 " style="margin: auto">
+                            <div class="column is-4" style="margin: auto">
                             <span class="button" @click=sumar($event,13,3)>Muy de acuerdo</span>
                             <span class="button" @click=sumar($event,13,1)>De acuerdo</span>
                             <span class="button" @click=restar($event,13,1)>Desacuerdo</span>
@@ -132,41 +145,41 @@
 
                 <div class="columns">
                     <div class="column is-6" style="margin: auto 0">
-                        <p id="a4" class="is-size-3-desktop has-text-centered"> 4)Macri festeja porque el peronismo no está unido. La unidad es la única forma de combatir a un gobierno oligárquico.</p></div>
-                        <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
-                            <div class="column is-4 " style="margin: auto">
-                            <span class="button" @click=sumar($event,14,3)>Muy de acuerdo</span>
-                            <span class="button" @click=sumar($event,14,1)>De acuerdo</span>
-                            <span class="button" @click=restar($event,14,1)>Desacuerdo</span>
-                            <span class="button" @click=restar($event,14,3)>Muy en desacuerdo</span>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="columns">
-                    <div class="column is-6" style="margin: auto 0">
-                        <p id="a5" class="is-size-3-desktop has-text-centered">5)Llevando propuestas que defiendan a los más vulnerables. Si no nos escuchan, luchar en la calle hasta que lo hagan. Nuestro deber es representar a los que no tienen voz, a los descartados.</p>
-                    </div>
+                        <p id="a5" class="is-size-3-desktop has-text-centered"> 5)Macri festeja porque el peronismo no está unido. La unidad es la única forma de combatir a un gobierno oligárquico.</p></div>
                         <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                             <div class="column is-4" style="margin: auto">
                             <span class="button" @click=sumar($event,15,3)>Muy de acuerdo</span>
                             <span class="button" @click=sumar($event,15,1)>De acuerdo</span>
                             <span class="button" @click=restar($event,15,1)>Desacuerdo</span>
                             <span class="button" @click=restar($event,15,3)>Muy en desacuerdo</span>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-6" style="margin: auto 0">
+                        <p id="a6" class="is-size-3-desktop has-text-centered">6)Llevando propuestas que defiendan a los más vulnerables. Si no nos escuchan, luchar en la calle hasta que lo hagan. Nuestro deber es representar a los que no tienen voz, a los descartados.</p>
+                    </div>
+                        <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
+                            <div class="column is-4" style="margin: auto">
+                            <span class="button" @click=sumar($event,16,3)>Muy de acuerdo</span>
+                            <span class="button" @click=sumar($event,16,1)>De acuerdo</span>
+                            <span class="button" @click=restar($event,16,1)>Desacuerdo</span>
+                            <span class="button" @click=restar($event,16,3)>Muy en desacuerdo</span>
                         </div>
                      </div>
                 </div>
 
                 <div class="columns">
                     <div class="column is-6" style="margin: auto 0">
-                        <p id="a6" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 6)Hay que coordinar con aquellas fuerzas políticas que no quieran ser solamente opositoras frente a las cámaras de televisión y luego votar con el gobierno. Hay que oponerse con fortaleza y presentar una alternativa real a favor de los trabajadores.</p>
+                        <p id="a7" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 7)Hay que coordinar con aquellas fuerzas políticas que no quieran ser solamente opositoras frente a las cámaras de televisión y luego votar con el gobierno. Hay que oponerse con fortaleza y presentar una alternativa real a favor de los trabajadores.</p>
                 </div>
                     <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                             <div class="column is-4" style="margin: auto">
-                            <span class="button" @click=sumar($event,16,3)>Muy de acuerdo</span>
-                            <span class="button" @click=sumar($event,16,1)>De acuerdo</span>
-                            <span class="button" @click=restar($event,16,1)>Desacuerdo</span>
-                            <span class="button" @click=restar($event,16,3)>Muy en desacuerdo</span>
+                            <span class="button" @click=sumar($event,17,3)>Muy de acuerdo</span>
+                            <span class="button" @click=sumar($event,17,1)>De acuerdo</span>
+                            <span class="button" @click=restar($event,17,1)>Desacuerdo</span>
+                            <span class="button" @click=restar($event,17,3)>Muy en desacuerdo</span>
                         </div>
                     </div>
                 </div>
@@ -188,7 +201,7 @@
 
                         <div class="buttons has-addons is-centered is-flex" style="margin: 60px">
                             <span class="button is-large is-danger is-centered" @click=undo($event,1)><i class="fa  fa-times"></i>&nbsp;Deshacer</span>
-                            <span class="button is-large is-success is-centered" @click=getPage2()><i class="fa  fa-check"></i>&nbsp;Contiunar</span>
+                            <span class="button is-large is-success is-centered" @click=getPage2()><i class="fa  fa-check"></i>&nbsp;Continuar</span>
                         </div>
 
                     </section>
@@ -218,35 +231,21 @@
 
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="b6" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 6)El saldo es ampliamente positivo. Cristina continuó el camino de Néstor: un proyecto nacional y popular del cual me enamoré y banco orgullosamente.</p>
+                                    <p id="b7" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 7)El saldo es ampliamente positivo. Cristina continuó el camino de Néstor: un proyecto nacional y popular del cual me enamoré y banco orgullosamente.</p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-4" style="margin: auto">
-                                        <span class="button" @click=sumar($event,26,3)>Muy de acuerdo</span>
-                                        <span class="button" @click=sumar($event,26,1)>De acuerdo</span>
-                                        <span class="button" @click=restar($event,26,1)>Desacuerdo</span>
-                                        <span class="button" @click=restar($event,26,3)>Muy en desacuerdo</span>
+                                        <span class="button" @click=sumar($event,27,3)>Muy de acuerdo</span>
+                                        <span class="button" @click=sumar($event,27,1)>De acuerdo</span>
+                                        <span class="button" @click=restar($event,27,1)>Desacuerdo</span>
+                                        <span class="button" @click=restar($event,27,3)>Muy en desacuerdo</span>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="b4" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 4)Cristina es una fuera de serie y sus gobiernos así lo reflejaron. Sólo es superada por Néstor y Perón.</p>
-                                </div>
-                                <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
-                                    <div class="column is-4" style="margin: auto">
-                                        <span class="button" @click=sumar($event,24,3)>Muy de acuerdo</span>
-                                        <span class="button" @click=sumar($event,24,1)>De acuerdo</span>
-                                        <span class="button" @click=restar($event,24,1)>Desacuerdo</span>
-                                        <span class="button" @click=restar($event,24,3)>Muy en desacuerdo</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="columns">
-                                <div class="column is-6" style="margin: auto 0">
-                                    <p id="b5" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 5) Muy positivo. Fue un gran avance en conquista de derechos para el pueblo, pero dejó grandes cuentas pendientes, sobretodo con los trabajadores de la economía popular. Además, hubo demasiada corrupción y sigo esperando la auto-crítica de Cristina en este sentido.</p>
+                                    <p id="b5" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 5)Cristina es una fuera de serie y sus gobiernos así lo reflejaron. Sólo es superada por Néstor y Perón.</p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-4" style="margin: auto">
@@ -254,6 +253,20 @@
                                         <span class="button" @click=sumar($event,25,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,25,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,25,3)>Muy en desacuerdo</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="columns">
+                                <div class="column is-6" style="margin: auto 0">
+                                    <p id="b6" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 6) Muy positivo. Fue un gran avance en conquista de derechos para el pueblo, pero dejó grandes cuentas pendientes, sobretodo con los trabajadores de la economía popular. Además, hubo demasiada corrupción y sigo esperando la auto-crítica de Cristina en este sentido.</p>
+                                </div>
+                                <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
+                                    <div class="column is-4" style="margin: auto">
+                                        <span class="button" @click=sumar($event,26,3)>Muy de acuerdo</span>
+                                        <span class="button" @click=sumar($event,26,1)>De acuerdo</span>
+                                        <span class="button" @click=restar($event,26,1)>Desacuerdo</span>
+                                        <span class="button" @click=restar($event,26,3)>Muy en desacuerdo</span>
                                     </div>
                                 </div>
                             </div>
@@ -288,14 +301,14 @@
 
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="b7" class="is-size-3-desktop has-text-centered" style="margin: auto 0">7)La vida por Cristina. Su gobierno fue verdaderamente nacional y popular, defendió a los que menos tienen y enfrentó a todos los poderosos juntos. </p>
+                                    <p id="b8" class="is-size-3-desktop has-text-centered" style="margin: auto 0">8)La vida por Cristina. Su gobierno fue verdaderamente nacional y popular, defendió a los que menos tienen y enfrentó a todos los poderosos juntos. </p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-4" style="margin: auto">
-                                        <span class="button" @click=sumar($event,27,3)>Muy de acuerdo</span>
-                                        <span class="button" @click=sumar($event,27,1)>De acuerdo</span>
-                                        <span class="button" @click=restar($event,27,1)>Desacuerdo</span>
-                                        <span class="button" @click=restar($event,27,3)>Muy en desacuerdo</span>
+                                        <span class="button" @click=sumar($event,28,3)>Muy de acuerdo</span>
+                                        <span class="button" @click=sumar($event,28,1)>De acuerdo</span>
+                                        <span class="button" @click=restar($event,28,1)>Desacuerdo</span>
+                                        <span class="button" @click=restar($event,28,3)>Muy en desacuerdo</span>
                                     </div>
                                 </div>
                             </div>
@@ -310,6 +323,20 @@
                                         <span class="button" @click=sumar($event,21,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,21,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,21,3)>Muy en desacuerdo</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="columns">
+                                <div class="column is-6" style="margin: auto 0">
+                                    <p id="b4" class="is-size-3-desktop has-text-centered" style="margin: auto 0">4)Cristina lideró un gobierno que hizo grandes ampliaciones de derecho a los sectores más humildes. Creo que el balance es positivo. Sin embargo, debemos tomar nota de que hubieron errores graves que nos llevaron a perder elecciones, como no escuchar reclamos por la inseguridad o el de modificar el impuesto a las ganancias.  </p>
+                                </div>
+                                <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
+                                    <div class="column is-4" style="margin: auto">
+                                        <span class="button" @click=sumar($event,24,3)>Muy de acuerdo</span>
+                                        <span class="button" @click=sumar($event,24,1)>De acuerdo</span>
+                                        <span class="button" @click=restar($event,24,1)>Desacuerdo</span>
+                                        <span class="button" @click=restar($event,24,3)>Muy en desacuerdo</span>
                                     </div>
                                 </div>
                             </div>
@@ -347,7 +374,34 @@
 
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="c4" class="is-size-3-desktop has-text-centered" style="margin: auto 0">4)Cristina es un excelente cuadro. Puede ser la presidenta pero sólo si asume un rol de conductora de todos compañeros, incluyendo a aquellos a los que algunos recién llegados al peronismo osan llamar "traidores". </p>
+                                    <p id="c5" class="is-size-3-desktop has-text-centered" style="margin: auto 0">5)Cristina es un excelente cuadro. Puede ser la presidenta pero sólo si asume un rol de conductora de todos compañeros, incluyendo a aquellos a los que algunos recién llegados al peronismo osan llamar "traidores". </p>
+                                </div>
+                                <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
+                                    <div class="column is-4" style="margin: auto">
+                                        <span class="button" @click=sumar($event,35,3)>Muy de acuerdo</span>
+                                        <span class="button" @click=sumar($event,35,1)>De acuerdo</span>
+                                        <span class="button" @click=restar($event,35,1)>Desacuerdo</span>
+                                        <span class="button" @click=restar($event,35,3)>Muy en desacuerdo</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="columns">
+                            <div class="column is-6" style="margin: auto 0">
+                                <p id="c1" class="is-size-3-desktop has-text-centered" style="margin: auto 0">1)Ninguno. Ya es un cadáver político. O quizás ahora pueda aspirar a ser la líder de esa izquierda marginal que siempre quiso representar.</p>
+                            </div>
+                            <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
+                                <div class="column is-4" style="margin: auto">
+                                    <span class="button" @click=sumar($event,31,3)>Muy de acuerdo</span>
+                                    <span class="button" @click=sumar($event,31,1)>De acuerdo</span>
+                                    <span class="button" @click=restar($event,31,1)>Desacuerdo</span>
+                                    <span class="button" @click=restar($event,31,3)>Muy en desacuerdo</span>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="columns">
+                                <div class="column is-6" style="margin: auto 0">
+                                    <p id="c4" class="is-size-3-desktop has-text-centered" style="margin: auto 0">4)Hoy la única que construye un gran polo opositor es Cristina, nadie puede discutirle su liderazgo. Con el tiempo seguramente aparecerán nuevos nombres.Compañeros como Gustavo Menéndez, el nuevo presidente del PJ Bonaerense, y Fernando Gray, son actores posibles para una necesaria renovación que me gustaría que Cristina ayude a construir.</p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-4" style="margin: auto">
@@ -358,21 +412,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="columns">
-                                <div class="column is-6" style="margin: auto 0">
-                                    <p id="c1" class="is-size-3-desktop has-text-centered" style="margin: auto 0">1)Ninguno. Ya es un cadáver político. O quizás ahora pueda aspirar a ser la líder de esa izquierda marginal que siempre quiso representar.</p>
-                                </div>
-                                <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
-                                    <div class="column is-4" style="margin: auto">
-                                        <span class="button" @click=sumar($event,31,3)>Muy de acuerdo</span>
-                                        <span class="button" @click=sumar($event,31,1)>De acuerdo</span>
-                                        <span class="button" @click=restar($event,31,1)>Desacuerdo</span>
-                                        <span class="button" @click=restar($event,31,3)>Muy en desacuerdo</span>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
                                     <p id="c2" class="is-size-3-desktop has-text-centered" style="margin: auto 0">2)Estar con actores de un gobierno que perdió las últimas elecciones iría contra cualquier manual de ciencia política. Además, ella se fue del peronismo y ahora su construcción descansa en el PC.</p>
@@ -389,14 +428,14 @@
 
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="c5" class="is-size-3-desktop has-text-centered" style="margin: auto 0">5)Debe sumarse a una nueva construcción con más debate interno, dónde compañeros como Florencio Randazzo encabecen una renovación. A Cristina ya no le da, tiene un techo que no puede perforar. La imágen de López y sus bolsos es irreversible. Ella es responsable de esa tragedia y debe hacerse cargo.</p>
+                                    <p id="c6" class="is-size-3-desktop has-text-centered" style="margin: auto 0">6)Debe sumarse a una nueva construcción con más debate interno, dónde compañeros como Florencio Randazzo encabecen una renovación. A Cristina ya no le da, tiene un techo que no puede perforar. La imágen de López y sus bolsos es irreversible. Ella es responsable de esa tragedia y debe hacerse cargo.</p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-4" style="margin: auto">
-                                        <span class="button" @click=sumar($event,35,3)>Muy de acuerdo</span>
-                                        <span class="button" @click=sumar($event,35,1)>De acuerdo</span>
-                                        <span class="button" @click=restar($event,35,1)>Desacuerdo</span>
-                                        <span class="button" @click=restar($event,35,3)>Muy en desacuerdo</span>
+                                        <span class="button" @click=sumar($event,36,3)>Muy de acuerdo</span>
+                                        <span class="button" @click=sumar($event,36,1)>De acuerdo</span>
+                                        <span class="button" @click=restar($event,36,1)>Desacuerdo</span>
+                                        <span class="button" @click=restar($event,36,3)>Muy en desacuerdo</span>
                                     </div>
                                 </div>
                             </div>
@@ -417,21 +456,7 @@
 
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="c6" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 6) Ella lo decidirá. Seguramente encabezará una alianza grande que contenga al peronismo pero que también lo rebalse. Lo importante es ver bajo qué lineamentos programáticos conseguimos ese frente para que sea una propuesta sólida que enamore al electorado, más que un rejunte de nombres.</p>
-                                </div>
-                                <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
-                                    <div class="column is-4" style="margin: auto">
-                                        <span class="button" @click=sumar($event,36,3)>Muy de acuerdo</span>
-                                        <span class="button" @click=sumar($event,36,1)>De acuerdo</span>
-                                        <span class="button" @click=restar($event,36,1)>Desacuerdo</span>
-                                        <span class="button" @click=restar($event,36,3)>Muy en desacuerdo</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="columns">
-                                <div class="column is-6" style="margin: auto 0">
-                                    <p id="c7" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 7)Por más que le pese a tibios y traidores, ella tiene los votos. Es la jefa del movimiento nacional y popular. Debe ser presidenta mientras su salud se lo permita porque nadie le llega a los talones. </p>
+                                    <p id="c7" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 7) Ella lo decidirá. Seguramente encabezará una alianza grande que contenga al peronismo pero que también lo rebalse. Lo importante es ver bajo qué lineamentos programáticos conseguimos ese frente para que sea una propuesta sólida que enamore al electorado, más que un rejunte de nombres.</p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-4" style="margin: auto">
@@ -439,6 +464,20 @@
                                         <span class="button" @click=sumar($event,37,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,37,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,37,3)>Muy en desacuerdo</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="columns">
+                                <div class="column is-6" style="margin: auto 0">
+                                    <p id="c8" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 8)Por más que le pese a tibios y traidores, ella es la dueña de los votos. Es la jefa del movimiento nacional y popular. Debe ser presidenta mientras su salud se lo permita porque nadie le llega a los talones. </p>
+                                </div>
+                                <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
+                                    <div class="column is-4" style="margin: auto">
+                                        <span class="button" @click=sumar($event,38,3)>Muy de acuerdo</span>
+                                        <span class="button" @click=sumar($event,38,1)>De acuerdo</span>
+                                        <span class="button" @click=restar($event,38,1)>Desacuerdo</span>
+                                        <span class="button" @click=restar($event,38,3)>Muy en desacuerdo</span>
                                     </div>
                                 </div>
                             </div>
@@ -474,14 +513,14 @@
 
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="d4" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 4) Me opongo a hablar de traidores. Cada compañero sabe lo que hace y actúa en consecuencia. Unidad Ciudadana, Cumplir y el Frente Renovador: todos juntos, apresurados y retardatarios. Así ganamos por el 60% que sacaba Perón. Debemos sí cuidarnos de los progresistas-liberales que siempre fueron funcionales a la oligarquía. Los de la Unión Democrática, los mismos que le hicieron perder la elección a Néstor Kirchner en 2009.</p>
+                                    <p id="d5" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 5) Me opongo a hablar de traidores. Cada compañero sabe lo que hace y actúa en consecuencia. Unidad Ciudadana, Cumplir y el Frente Renovador: todos juntos, apresurados y retardatarios. Así ganamos por el 60% que sacaba Perón. Debemos sí cuidarnos de los progresistas-liberales que siempre fueron funcionales a la oligarquía. Los de la Unión Democrática, los mismos que le hicieron perder la elección a Néstor Kirchner en 2009.</p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-4" style="margin: auto">
-                                        <span class="button" @click=sumar($event,44,3)>Muy de acuerdo</span>
-                                        <span class="button" @click=sumar($event,44,1)>De acuerdo</span>
-                                        <span class="button" @click=restar($event,44,1)>Desacuerdo</span>
-                                        <span class="button" @click=restar($event,44,3)>Muy en desacuerdo</span>
+                                        <span class="button" @click=sumar($event,45,3)>Muy de acuerdo</span>
+                                        <span class="button" @click=sumar($event,45,1)>De acuerdo</span>
+                                        <span class="button" @click=restar($event,45,1)>Desacuerdo</span>
+                                        <span class="button" @click=restar($event,45,3)>Muy en desacuerdo</span>
                                     </div>
                                 </div>
                             </div>
@@ -502,7 +541,7 @@
 
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="d2" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 2) Los justicialistas votaron en cada caso con la responsabilidad que implica el ejercicio del poder en linea. Plantearon sus desidencias y siempre estuvieron dispuestos a mejorar los proyectos oficialistas. Y no, tiene sentido tender puentes con Cristina y los suyos, son los mariscales de la derrota del peronismo y que para colmo, luego lo abandonaron</p>
+                                    <p id="d2" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 2) Los justicialistas votaron en cada caso con la responsabilidad que implica el ejercicio del poder en linea. Plantearon sus desidencias y siempre estuvieron dispuestos a mejorar los proyectos oficialistas. Y no, tiene sentido tender puentes con Cristina y los suyos, son los mariscales de la derrota del peronismo y que para colmo, luego lo abandonaron.</p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-4" style="margin: auto">
@@ -517,7 +556,22 @@
 
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="d6" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 6)Si bien puedo entender las motivaciones de algunos compañeros apretados por el macrismo y las emergencias de la gestión en las provincias, creo que es un error acompañar leyes que implicaron un retroceso en lo que se consiguió estos años. Se puede y se debe armar un frente, siempre y cuando su orientación sea terminar con el proyecto neo-liberal macrista.</p>
+                                    <p id="d7" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 7)Si bien puedo entender las motivaciones de algunos compañeros apretados por el macrismo y las emergencias de la gestión en las provincias, creo que es un error acompañar leyes que implicaron un retroceso en lo que se consiguió estos años. Se puede y se debe armar un frente, siempre y cuando su orientación sea terminar con el proyecto neo-liberal macrista.</p>
+                                </div>
+                                <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
+                                    <div class="column is-4" style="margin: auto">
+                                        <span class="button" @click=sumar($event,47,3)>Muy de acuerdo</span>
+                                        <span class="button" @click=sumar($event,47,1)>De acuerdo</span>
+                                        <span class="button" @click=restar($event,47,1)>Desacuerdo</span>
+                                        <span class="button" @click=restar($event,47,3)>Muy en desacuerdo</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="columns">
+                                <div class="column is-6" style="margin: auto 0">
+                                    <p id="d6" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 6)En el peronismo no hay conducción. Por eso algunos pueden perder el rumbo. Hay que llevar a cabo una renovación, donde el centro no sean sus dirigentes sino presentar ideas que seduzcan a la sociedad. Dicho centro depende de que se llegue a una unidad por debate interno y consultando a la gente a través de las PASO, sin que nadie monopolice lapicera ni pida obediencia absoluta.</p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-4" style="margin: auto">
@@ -528,22 +582,19 @@
                                     </div>
                                 </div>
                             </div>
-
-
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="d5" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 5)En el peronismo no hay conducción. Por eso algunos pueden perder el rumbo. Hay que llevar a cabo una renovación, donde el centro no sean sus dirigentes sino presentar ideas que seduzcan a la sociedad. Dicho centro depende de que se llegue a una unidad por debate interno y consultando a la gente a través de las PASO, sin que nadie monopolice lapicera ni pida obediencia absoluta.</p>
+                                    <p id="d4" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 4)No concuerdo con acompañar el ajuste a los jubilados. Por eso apoyo formar un gran frente electoral dónde el límite no son las personas, sino las ideas, que deben ser superadoras de las del gobierno de Cambiemos. Un frente para proponer, no para combatir a un enemigo, eso no existe en la política.  </p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-4" style="margin: auto">
-                                        <span class="button" @click=sumar($event,45,3)>Muy de acuerdo</span>
-                                        <span class="button" @click=sumar($event,45,1)>De acuerdo</span>
-                                        <span class="button" @click=restar($event,45,1)>Desacuerdo</span>
-                                        <span class="button" @click=restar($event,45,3)>Muy en desacuerdo</span>
+                                        <span class="button" @click=sumar($event,44,3)>Muy de acuerdo</span>
+                                        <span class="button" @click=sumar($event,44,1)>De acuerdo</span>
+                                        <span class="button" @click=restar($event,44,1)>Desacuerdo</span>
+                                        <span class="button" @click=restar($event,44,3)>Muy en desacuerdo</span>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
                                     <p id="d3" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 3) Sin duda debe haber diálogo entre todas las fuerzas políticas opositoras, pero no quiero un frente con los que representan la corrupción del pasado.</p>
@@ -560,14 +611,14 @@
 
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="d7" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 7)Los que votaron con el gobierno para pagarle a los Fondos Buitre o ajustar a los jubilados son traidores, abandonaron la defensa de la justicia social. Con traidores degustadores de sanguchitos, ni a la esquina. Aunque perdamos las elecciones del año que viene, debemos concentrarnos en construir un verdadero frente progresista y estar listos para cuando el pueblo despierte y eche a Macri.</p>
+                                    <p id="d8" class="is-size-3-desktop has-text-centered" style="margin: auto 0"> 8)Los que votaron con el gobierno para pagarle a los Fondos Buitre o ajustar a los jubilados son traidores, abandonaron la defensa de la justicia social. Con traidores degustadores de sanguchitos, ni a la esquina. Aunque perdamos las elecciones del año que viene, debemos concentrarnos en construir un verdadero frente progresista y estar listos para cuando el pueblo despierte y eche a Macri.</p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-4" style="margin: auto">
-                                        <span class="button" @click=sumar($event,47,3)>Muy de acuerdo</span>
-                                        <span class="button" @click=sumar($event,47,1)>De acuerdo</span>
-                                        <span class="button" @click=restar($event,47,1)>Desacuerdo</span>
-                                        <span class="button" @click=restar($event,47,3)>Muy en desacuerdo</span>
+                                        <span class="button" @click=sumar($event,48,3)>Muy de acuerdo</span>
+                                        <span class="button" @click=sumar($event,48,1)>De acuerdo</span>
+                                        <span class="button" @click=restar($event,48,1)>Desacuerdo</span>
+                                        <span class="button" @click=restar($event,48,3)>Muy en desacuerdo</span>
                                     </div>
                                 </div>
                             </div>

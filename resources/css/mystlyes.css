@@ -1,7 +1,7 @@
 @media only screen and (max-width:768px){
-  html{
+  body{
 
-    background-color: #209cee;
+
     background: url("../img/backMobile.png");
     background-repeat: repeat;
 
@@ -9,7 +9,10 @@
     }
 
 
+html{
 
+  background-color: #209cee;
+}
 
   .button{
 

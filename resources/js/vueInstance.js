@@ -27,52 +27,62 @@ var app = new Vue({
 
         julioBarbaro1: 0,
         miguelAngelPichetto1: 0,
+        sergioMassa1: 0,
+        martinInsaurralde1:0,
         guillermoMoreno1: 0,
         chinoNavarro1: 0,
         chivoRossi1: 0,
         cuervoLarroque1: 0,
-        sergioMassa1: 0,
+
 
         julioBarbaro2: 0,
         miguelAngelPichetto2: 0,
+        sergioMassa2: 0,
+        martinInsaurralde2:0,
         guillermoMoreno2: 0,
         chinoNavarro2: 0,
         chivoRossi2: 0,
         cuervoLarroque2: 0,
-        sergioMassa2: 0,
+
 
         julioBarbaro3: 0,
         miguelAngelPichetto3: 0,
+        sergioMassa3: 0,
+        martinInsaurralde3:0,
         guillermoMoreno3: 0,
         chinoNavarro3: 0,
         chivoRossi3: 0,
         cuervoLarroque3: 0,
-        sergioMassa3: 0,
+
 
 
         julioBarbaro4: 0,
         miguelAngelPichetto4: 0,
+        sergioMassa4: 0,
+        martinInsaurralde4:0,
         guillermoMoreno4: 0,
         chinoNavarro4: 0,
         chivoRossi4: 0,
         cuervoLarroque4: 0,
-        sergioMassa4: 0,
+
 
 
         julioBarbaro: 0,
         miguelAngelPichetto: 0,
         guillermoMoreno: 0,
+        martinInsaurralde:0,
+        sergioMassa: 0,
         chinoNavarro: 0,
         chivoRossi: 0,
         cuervoLarroque: 0,
-        sergioMassa: 0,
+
 
 
         page1: true,
         page2: false,
         page3: false,
         page4: false,
-        intro:true,
+        intro: true,
 
         totales: [],
 
@@ -84,40 +94,44 @@ var app = new Vue({
 
     },
     methods: {
-        sumar: function (event, quien, cuanto) {
+            sumar: function (event, quien, cuanto) {
             switch (quien) {
 //Switch para saber saber a quien se le suman puntos solo si la variable estaba en cero
                 case 11: { if (this.julioBarbaro1 == 0) { this.julioBarbaro1 += cuanto };break}
                 case 12: { if (this.miguelAngelPichetto1 == 0) {this.miguelAngelPichetto1 += cuanto};break}
                 case 13: { if (this.sergioMassa1 == 0) { this.sergioMassa1 += cuanto};break}
-                case 14: { if (this.guillermoMoreno1 == 0) { this.guillermoMoreno1 += cuanto};break}
-                case 15: { if (this.chinoNavarro1 == 0) { this.chinoNavarro1 += cuanto};break}
-                case 16: { if (this.chivoRossi1 == 0) { this.chivoRossi1 += cuanto};break}
-                case 17: { if (this.cuervoLarroque1 == 0) { this.cuervoLarroque1 += cuanto};break}
+                case 14: { if (this.martinInsaurralde1 == 0) { this.martinInsaurralde1 += cuanto};break}
+                case 15: { if (this.guillermoMoreno1 == 0) { this.guillermoMoreno1 += cuanto};break}
+                case 16: { if (this.chinoNavarro1 == 0) { this.chinoNavarro1 += cuanto};break}
+                case 17: { if (this.chivoRossi1 == 0) { this.chivoRossi1 += cuanto};break}
+                case 18: { if (this.cuervoLarroque1 == 0) { this.cuervoLarroque1 += cuanto};break}
 
                 case 21: { if (this.julioBarbaro2 == 0) { this.julioBarbaro2 += cuanto};break}
                 case 22: { if (this.miguelAngelPichetto2 == 0) { this.miguelAngelPichetto2 += cuanto}; break}
                 case 23: { if (this.sergioMassa2 == 0) { this.sergioMassa2 += cuanto};break}
-                case 24: { if (this.guillermoMoreno2 == 0) {this.guillermoMoreno2 += cuanto};break}
-                case 25: { if (this.chinoNavarro2 == 0) {this.chinoNavarro2 += cuanto};break}
-                case 26: { if (this.chivoRossi2 == 0) {this.chivoRossi2 += cuanto};break}
-                case 27: { if (this.cuervoLarroque2 == 0) {this.cuervoLarroque2 += cuanto};break}
+                case 24: { if (this.martinInsaurralde2 == 0) { this.martinInsaurralde2+= cuanto};break}
+                case 25: { if (this.guillermoMoreno2 == 0) {this.guillermoMoreno2 += cuanto};break}
+                case 26: { if (this.chinoNavarro2 == 0) {this.chinoNavarro2 += cuanto};break}
+                case 27: { if (this.chivoRossi2 == 0) {this.chivoRossi2 += cuanto};break}
+                case 28: { if (this.cuervoLarroque2 == 0) {this.cuervoLarroque2 += cuanto};break}
 
                 case 31: { if (this.julioBarbaro3 == 0) {this.julioBarbaro3 += cuanto};break}
                 case 32: { if (this.miguelAngelPichetto3 == 0) {this.miguelAngelPichetto3 += cuanto};break}
                 case 33: { if (this.sergioMassa3 == 0) {this.sergioMassa3 += cuanto};break}
-                case 34: { if (this.guillermoMoreno3 == 0) {this.guillermoMoreno3 += cuanto};break}
-                case 35: { if (this.chinoNavarro3 == 0) {this.chinoNavarro3 += cuanto};break}
-                case 36: { if (this.chivoRossi3 == 0) {this.chivoRossi3 += cuanto};break}
-                case 37: { if (this.cuervoLarroque3 == 0) {this.cuervoLarroque3 += cuanto};break}
+                case 34: { if (this.martinInsaurralde3 == 0) {this.martinInsaurralde3 += cuanto};break}
+                case 35: { if (this.guillermoMoreno3 == 0) {this.guillermoMoreno3 += cuanto};break}
+                case 36: { if (this.chinoNavarro3 == 0) {this.chinoNavarro3 += cuanto};break}
+                case 37: { if (this.chivoRossi3 == 0) {this.chivoRossi3 += cuanto};break}
+                case 38: { if (this.cuervoLarroque3 == 0) {this.cuervoLarroque3 += cuanto};break}
 
                 case 41: { if (this.julioBarbaro4 == 0) {this.julioBarbaro4 += cuanto};break}
                 case 42: { if (this.miguelAngelPichetto4 == 0) {this.miguelAngelPichetto4 += cuanto};break}
                 case 43: { if (this.sergioMassa4 == 0) {this.sergioMassa4 += cuanto};break}
-                case 44: { if (this.guillermoMoreno4 == 0) {this.guillermoMoreno4 += cuanto};break}
-                case 45: { if (this.chinoNavarro4 == 0) {this.chinoNavarro4 += cuanto};break}
-                case 46: { if (this.chivoRossi4 == 0) {this.chivoRossi4 += cuanto};break}
-                case 47: { if (this.cuervoLarroque4 == 0) { this.cuervoLarroque4 += cuanto};break}
+                case 44: { if (this.martinInsaurralde4 == 0) {this.martinInsaurralde4 += cuanto};break}
+                case 45: { if (this.guillermoMoreno4 == 0) {this.guillermoMoreno4 += cuanto};break}
+                case 46: { if (this.chinoNavarro4 == 0) {this.chinoNavarro4 += cuanto};break}
+                case 47: { if (this.chivoRossi4 == 0) {this.chivoRossi4 += cuanto};break}
+                case 48: { if (this.cuervoLarroque4 == 0) { this.cuervoLarroque4 += cuanto};break}
 
             }
 
@@ -150,34 +164,38 @@ var app = new Vue({
                 case 11: { if (this.julioBarbaro1 == 0) { this.julioBarbaro1 -= cuanto };break}
                 case 12: { if (this.miguelAngelPichetto1 == 0) {this.miguelAngelPichetto1 -= cuanto};break}
                 case 13: { if (this.sergioMassa1 == 0) { this.sergioMassa1 -= cuanto};break}
-                case 14: { if (this.guillermoMoreno1 == 0) { this.guillermoMoreno1 -= cuanto};break}
-                case 15: { if (this.chinoNavarro1 == 0) { this.chinoNavarro1 -= cuanto};break}
-                case 16: { if (this.chivoRossi1 == 0) { this.chivoRossi1 -= cuanto};break}
-                case 17: { if (this.cuervoLarroque1 == 0) { this.cuervoLarroque1 -= cuanto};break}
+                case 14: { if (this.martinInsaurralde1 == 0) { this.martinInsaurralde1 -= cuanto};break}
+                case 15: { if (this.guillermoMoreno1 == 0) { this.guillermoMoreno1 -= cuanto};break}
+                case 16: { if (this.chinoNavarro1 == 0) { this.chinoNavarro1 -= cuanto};break}
+                case 17: { if (this.chivoRossi1 == 0) { this.chivoRossi1 -= cuanto};break}
+                case 18: { if (this.cuervoLarroque1 == 0) { this.cuervoLarroque1 -= cuanto};break}
 
                 case 21: { if (this.julioBarbaro2 == 0) { this.julioBarbaro2 -= cuanto};break}
                 case 22: { if (this.miguelAngelPichetto2 == 0) { this.miguelAngelPichetto2 -= cuanto}; break}
                 case 23: { if (this.sergioMassa2 == 0) { this.sergioMassa2 -= cuanto};break}
-                case 24: { if (this.guillermoMoreno2 == 0) {this.guillermoMoreno2 -= cuanto};break}
-                case 25: { if (this.chinoNavarro2 == 0) {this.chinoNavarro2 -= cuanto};break}
-                case 26: { if (this.chivoRossi2 == 0) {this.chivoRossi2 -= cuanto};break}
-                case 27: { if (this.cuervoLarroque2 == 0) {this.cuervoLarroque2 -= cuanto};break}
+                case 24: { if (this.martinInsaurralde2 == 0) {this.martinInsaurralde2 -= cuanto};break}
+                case 25: { if (this.guillermoMoreno2 == 0) {this.guillermoMoreno2 -= cuanto};break}
+                case 26: { if (this.chinoNavarro2 == 0) {this.chinoNavarro2 -= cuanto};break}
+                case 27: { if (this.chivoRossi2 == 0) {this.chivoRossi2 -= cuanto};break}
+                case 28: { if (this.cuervoLarroque2 == 0) {this.cuervoLarroque2 -= cuanto};break}
 
                 case 31: { if (this.julioBarbaro3 == 0) {this.julioBarbaro3 -= cuanto};break}
                 case 32: { if (this.miguelAngelPichetto3 == 0) {this.miguelAngelPichetto3 -= cuanto};break}
                 case 33: { if (this.sergioMassa3 == 0) {this.sergioMassa3 -= cuanto};break}
-                case 34: { if (this.guillermoMoreno3 == 0) {this.guillermoMoreno3 -= cuanto};break}
-                case 35: { if (this.chinoNavarro3 == 0) {this.chinoNavarro3 -= cuanto};break}
-                case 36: { if (this.chivoRossi3 == 0) {this.chivoRossi3 -= cuanto};break}
-                case 37: { if (this.cuervoLarroque3 == 0) {this.cuervoLarroque3 -= cuanto};break}
+                case 34: { if (this.martinInsaurralde4 == 0) {this.martinInsaurralde4 -= cuanto};break}
+                case 35: { if (this.guillermoMoreno3 == 0) {this.guillermoMoreno3 -= cuanto};break}
+                case 36: { if (this.chinoNavarro3 == 0) {this.chinoNavarro3 -= cuanto};break}
+                case 37: { if (this.chivoRossi3 == 0) {this.chivoRossi3 -= cuanto};break}
+                case 38: { if (this.cuervoLarroque3 == 0) {this.cuervoLarroque3 -= cuanto};break}
 
                 case 41: { if (this.julioBarbaro4 == 0) {this.julioBarbaro4 -= cuanto};break}
                 case 42: { if (this.miguelAngelPichetto4 == 0) {this.miguelAngelPichetto4 -= cuanto};break}
                 case 43: { if (this.sergioMassa4 == 0) {this.sergioMassa4 -= cuanto};break}
-                case 44: { if (this.guillermoMoreno4 == 0) {this.guillermoMoreno4 -= cuanto};break}
-                case 45: { if (this.chinoNavarro4 == 0) {this.chinoNavarro4 -= cuanto};break}
-                case 46: { if (this.chivoRossi4 == 0) {this.chivoRossi4 -= cuanto};break}
-                case 47: { if (this.cuervoLarroque4 == 0) { this.cuervoLarroque4 -= cuanto};break}
+                case 44: { if (this.martinInsaurralde4 == 0) {this.martinInsaurralde4 -= cuanto};break}
+                case 45: { if (this.guillermoMoreno4 == 0) {this.guillermoMoreno4 -= cuanto};break}
+                case 46: { if (this.chinoNavarro4 == 0) {this.chinoNavarro4 -= cuanto};break}
+                case 47: { if (this.chivoRossi4 == 0) {this.chivoRossi4 -= cuanto};break}
+                case 48: { if (this.cuervoLarroque4 == 0) { this.cuervoLarroque4 -= cuanto};break}
             }
 
             var get2 = event.currentTarget;
@@ -214,32 +232,35 @@ var app = new Vue({
 
             }
             this.page1 = false;
+            setTimeout(window.scrollTo(0, 1000),100);
         },
 
 
         getPage3: function () {
+            damePagina3();
 
-            this.page2 = false;
-            setTimeout(damePagina3, 100);
             function damePagina3() {
 
                 app.page3=true;
 
 
             }
+            this.page2 = false;
+            setTimeout(window.scrollTo(0, 1000),100);
         },
 
 
         getPage4: function () {
 
-            this.page3 = false;
-            setTimeout(damePagina4, 100);
+            damePagina4();
             function damePagina4() {
 
                 app.page4=true;
 
 
             }
+            this.page3 = false;
+            setTimeout(window.scrollTo(0, 1000),100);
         },
 
         removeHelp: function () {
@@ -254,7 +275,7 @@ var app = new Vue({
 
             var buttonsInvisible = document.getElementsByClassName('button');
             for (var i = 0; i < buttonsInvisible.length; i++) {
-                buttonsInvisible[i].style.display = "initial";
+                buttonsInvisible[i].style.display = "block";
             }
 
 //Coleccion de bottones "de acuerdo" y devueltos a clase de "no seleccionados"
@@ -280,6 +301,7 @@ var app = new Vue({
                 this.chivoRossi1 = 0;
                 this.cuervoLarroque1 = 0;
                 this.sergioMassa1 = 0;
+                this.martinInsaurralde1 = 0;
             }
 
             else if (pagina == 2) {
@@ -290,6 +312,7 @@ var app = new Vue({
                 this.chivoRossi2 = 0;
                 this.cuervoLarroque2 = 0;
                 this.sergioMassa2 = 0;
+                this.martinInsaurralde2 = 0;
 
             }
             else if (pagina == 3) {
@@ -300,6 +323,7 @@ var app = new Vue({
                 this.chivoRossi3 = 0;
                 this.cuervoLarroque3 = 0;
                 this.sergioMassa3 = 0;
+                this.martinInsaurralde3 = 0;
 
             }
 
@@ -311,7 +335,7 @@ var app = new Vue({
                 this.chivoRossi4 = 0;
                 this.cuervoLarroque4 = 0;
                 this.sergioMassa4 = 0;
-
+                this.martinInsaurralde4 = 0;
             }
 
         },
@@ -327,6 +351,9 @@ var app = new Vue({
 
             sergioMassa = this.sergioMassa1 + this.sergioMassa2 + this.sergioMassa3 + this.sergioMassa4;
             this.totales.push(sergioMassa);
+
+            martinInsaurralde = this.martinInsaurralde1 + this.martinInsaurralde2 + this.martinInsaurralde3 + this.martinInsaurralde4;
+            this.totales.push(martinInsaurralde);
 
             guillermoMoreno = this.guillermoMoreno1 + this.guillermoMoreno2 + this.guillermoMoreno3 + this.guillermoMoreno4;
             this.totales.push(guillermoMoreno);
@@ -415,18 +442,22 @@ var app = new Vue({
                     break
                 }
                 case 3 : {
-                    app.primero = 'Guillermo Moreno';
+                    this.primero = 'Martín Insaurralde';
                     break
                 }
                 case 4 : {
-                    app.primero = 'Fernando \"Chino\" Navarro';
+                    app.primero = 'Guillermo Moreno';
                     break
                 }
                 case 5 : {
-                    app.primero = 'Agustín \"Chivo\" Rossi';
+                    app.primero = 'Fernando \"Chino\" Navarro';
                     break
                 }
                 case 6 : {
+                    app.primero = 'Agustín \"Chivo\" Rossi';
+                    break
+                }
+                case 7 : {
                     app.primero = 'Andrés \"Cuervo\" Larroque';
                     break
                 }
@@ -446,18 +477,22 @@ var app = new Vue({
                     break
                 }
                 case 3 : {
-                    app.segundo = 'Guillermo Moreno';
+                    this.segundo = 'Martín Insaurralde';
                     break
                 }
                 case 4 : {
-                    app.segundo = 'Fernando \"Chino\" Navarro';
+                    app.segundo = 'Guillermo Moreno';
                     break
                 }
                 case 5 : {
-                    app.segundo = 'Agustín \"Chivo\" Rossi';
+                    app.segundo = 'Fernando \"Chino\" Navarro';
                     break
                 }
                 case 6 : {
+                    app.segundo = 'Agustín \"Chivo\" Rossi';
+                    break
+                }
+                case 7 : {
                     app.segundo = 'Andrés \"Cuervo\" Larroque';
                     break
                 }
@@ -477,18 +512,22 @@ var app = new Vue({
                     break
                 }
                 case 3 : {
-                    app.ultimo = 'Guillermo Moreno';
+                    this.ultimo = 'Martín Insaurralde';
                     break
                 }
                 case 4 : {
-                    app.ultimo = 'Fernando \"Chino\" Navarro';
+                    app.ultimo = 'Guillermo Moreno';
                     break
                 }
                 case 5 : {
-                    app.ultimo = 'Agustín \"Chivo\" Rossi';
+                    app.ultimo = 'Fernando \"Chino\" Navarro';
                     break
                 }
                 case 6 : {
+                    app.ultimo = 'Agustín \"Chivo\" Rossi';
+                    break
+                }
+                case 7 : {
                     app.ultimo = 'Andrés \"Cuervo\" Larroque';
                     break
                 }
