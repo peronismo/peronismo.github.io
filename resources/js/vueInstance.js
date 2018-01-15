@@ -205,7 +205,7 @@ var app = new Vue({
 
 
         getPage2: function () {
-
+            app.intro = false;
             setTimeout(damePagina2, 500);
 
             function damePagina2() {
@@ -214,7 +214,7 @@ var app = new Vue({
 
             }
             app.page1 = false;
-            app.intro = false;
+
         },
 
         getPage3: function () {
