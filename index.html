@@ -10,23 +10,43 @@
     <title>Test peronista</title>
 
     <style>
+        @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+            .slide-fade-enter-active {
+                transition: all 1s ease-in-out;
 
-        .slide-fade-enter-active {
-            transition: all 3s ease;
+            }
 
+            .slide-fade-leave-active {
+                transition: all 1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+                transform: translateY(0px);
+            }
 
+            .slide-fade-enter, .slide-fade-leave-to {
+                transform: translateX(1500px);
+                transform: translateY(0px);
 
+                opacity: 0;
+            }
         }
-        .slide-fade-leave-active {
-            transition: all 2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 
-        }
-        .slide-fade-enter, .slide-fade-leave-to{
-            transform: translateX(1500px);
-           
-            opacity: 0;
-        }
+        @media all {
+            .slide-fade-enter-active {
+                transition: all 1s ease-in-out;
 
+            }
+
+            .slide-fade-leave-active {
+                transition: all 1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+                transform: translateY(0px);
+            }
+
+            .slide-fade-enter, .slide-fade-leave-to {
+                transform: translateX(1500px);
+
+
+                opacity: 0;
+            }
+        }
 
     </style>
 </head>

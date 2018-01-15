@@ -1,23 +1,21 @@
-@media screen and (max-width: 768px) and (orientation: portrait){
-body {
-  background: url("../img/backMobile.jpg");
-    background-size: cover;
-    background-position: bottom;
-    margin: 0;
-}
+@media screen and (max-width: 768px){
+html {
+    background: url("../img/backMobile.jpg");
+    background-position: right !important;
 
+    -webkit-mask-attachment: fixed;
+}
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape){
-    body {
-        background: url("../img/backDesk.jpg");
-        background-size: cover;
+    html {
+ background-color: #209cee;
 
     }
 
 }
 @media screen and (min-width: 768px) {
-    body {
+    html {
         background: url("../img/backDesk.jpg");
         background-size: cover;
         background-attachment: fixed;

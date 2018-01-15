@@ -205,40 +205,41 @@ var app = new Vue({
 
 
         getPage2: function () {
-           setTimeout(damePagina2, 0);
+            this.page1 = false;
+           setTimeout(damePagina2, 1000);
            function damePagina2() {
-               app.page2 = true;
+
+               app.page2=true;
+
+
             }
-            app.page1 = false;
 
         },
 
 
         getPage3: function () {
 
-            setTimeout(damePagina3, 0);
-
+            this.page2 = false;
+            setTimeout(damePagina3, 1000);
             function damePagina3() {
 
-                app.page3 = true;
+                app.page3=true;
+
 
             }
-
-            app.page2 = false;
         },
 
 
         getPage4: function () {
 
-            setTimeout(damePagina4, 0);
-
+            this.page3 = false;
+            setTimeout(damePagina4, 1000);
             function damePagina4() {
 
-                app.page4 = true;
+                app.page4=true;
+
 
             }
-
-            app.page3 = false;
         },
 
         removeHelp: function () {
