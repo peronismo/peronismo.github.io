@@ -1,7 +1,7 @@
 body {
   background: url("../img/bodyBack.jpg");
-  background-size: cover !important;
-  background-attachment: fixed !important;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .modal-mask {

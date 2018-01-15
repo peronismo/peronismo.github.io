@@ -206,14 +206,15 @@ var app = new Vue({
 
         getPage2: function () {
             app.intro = false;
-            setTimeout(damePagina2, 500);
+            app.page1 = false;
+           damePagina2()
 
             function damePagina2() {
 
                 app.page2 = true;
 
             }
-            app.page1 = false;
+
 
         },
 
