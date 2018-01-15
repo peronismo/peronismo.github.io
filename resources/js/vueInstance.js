@@ -252,21 +252,21 @@ var app = new Vue({
         undo: function (event, pagina) {
 //Coleccion de botonones escondidos re-aparecen
 
-            var buttonsInvisible = document.getElementsByClassName('button is-large');
+            var buttonsInvisible = document.getElementsByClassName('button');
             for (var i = 0; i < buttonsInvisible.length; i++) {
                 buttonsInvisible[i].style.display = "initial";
             }
 
 //Coleccion de bottones "de acuerdo" y devueltos a clase de "no seleccionados"
-            var buttonsGreen = document.getElementsByClassName('button is-large is-success is-selected');
+            var buttonsGreen = document.getElementsByClassName('button is-success is-selected');
             while (buttonsGreen.length > 0) {
-                buttonsGreen[0].className = 'button is-large';
+                buttonsGreen[0].className = 'button';
 //Coleccion de bottones "de acuerdo" y devueltos a clase de "no seleccionados"
 
             }
-            var buttonsRed = document.getElementsByClassName('button is-large is-danger is-selected');
+            var buttonsRed = document.getElementsByClassName('button is-danger is-selected');
             while (buttonsRed.length > 0) {
-                buttonsRed[0].className = 'button is-large';
+                buttonsRed[0].className = 'button';
             }
 
 //Reseteando array de la variable correspondiente a la pagina

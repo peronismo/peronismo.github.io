@@ -1,20 +1,46 @@
 @media only screen and (max-width:768px){
+  html{
 
-    body{background: url("../img/backMobile.jpg")}
+    background-color: #209cee;
+  }
+  body {
+    background: url("../img/backMobile.jpg");
+
+
+  }
+
+  .button{
+
+    display: flex;
+
+  }
 
 
 }
 
 @media only screen and (min-width:768px){
 
-    body{
-        background: url("../img/backDesk.jpg");
-        background-size: cover !important;
-        background-attachment: fixed;
-    }
+  body{
+    background: url("../img/backDesk.jpg");
+    background-size: cover !important;
+    background-attachment: fixed;}
+
+  .button{
+
+    display: flex;
+
+
+  }
+
+  .column is-6 {
+
+    margin: auto ;
+  }
 
 
 }
+
+
 
 .modal-mask {
   position: fixed;
