@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caf316d1-ba6f-4356-9ddc-8ecbfe142310" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/img/backMobile.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/img/logo.gif" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/img/Thumbs.db" afterPath="$PROJECT_DIR$/resources/img/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/mystlyes.css" afterPath="$PROJECT_DIR$/resources/css/mystlyes.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/mystlyes.scss" afterPath="$PROJECT_DIR$/resources/css/mystlyes.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/vueInstance.js" afterPath="$PROJECT_DIR$/resources/js/vueInstance.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +17,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="447">
@@ -152,11 +150,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mystlyes.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mystlyes.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/css/mystlyes.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
-              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -198,7 +196,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>container</find>
       <find>containerIn</find>
       <find>script</find>
       <find>curren</find>
@@ -228,6 +225,7 @@
       <find>contai</find>
       <find>hero-</find>
       <find>contain</find>
+      <find>me opongo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -244,8 +242,8 @@
         <option value="$PROJECT_DIR$/resources/js/buttons.js" />
         <option value="$PROJECT_DIR$/resources/css/mystlyes.scss" />
         <option value="$PROJECT_DIR$/resources/js/vueInstance.js" />
-        <option value="$PROJECT_DIR$/resources/css/mystlyes.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/resources/css/mystlyes.css" />
       </list>
     </option>
   </component>
@@ -548,15 +546,15 @@
       <workItem from="1515888152265" duration="722000" />
       <workItem from="1515955836082" duration="56000" />
       <workItem from="1515965154477" duration="22505000" />
-      <workItem from="1516021212824" duration="17526000" />
+      <workItem from="1516021212824" duration="19266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164675000" />
+    <option name="totallyTimeSpent" value="166415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1280683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2404,14 +2402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/mystlyes.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
@@ -2540,6 +2530,14 @@
             <element signature="n#style#0;n#span#1;n#div#7;n#section#0;n#div#0;n#div#0;n#section#0;n#transition#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#41610#41616#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/mystlyes.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

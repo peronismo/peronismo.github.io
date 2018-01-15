@@ -2,12 +2,14 @@
   html{
 
     background-color: #209cee;
-  }
-  body {
-    background: url("../img/backMobile.jpg");
+    background: url("../img/backMobile.png");
+    background-repeat: repeat;
 
 
-  }
+    }
+
+}
+
 
   .button{
 
@@ -19,6 +21,10 @@
 }
 
 @media only screen and (min-width:768px){
+  html{
+
+    background-color: #209cee;
+  }
 
   body{
     background: url("../img/backDesk.jpg");
