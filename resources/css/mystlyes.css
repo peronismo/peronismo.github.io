@@ -8,13 +8,13 @@
 
     }
 
-}
+
 
 
   .button{
 
     display: flex;
-
+    font-weight: bolder;
   }
 
 
@@ -34,13 +34,15 @@
   .button{
 
     display: flex;
-
+    font-weight: bolder;
 
   }
 
-  .column is-6 {
+  .columns {
 
-    margin: auto ;
+    border: solid 5px #ffdd57;
+    border-radius: 10px;
+    margin-top: 50px;
   }
 
 
