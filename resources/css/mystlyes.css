@@ -1,27 +1,18 @@
-@media screen and (max-width: 768px){
-html {
-    background: url("../img/backMobile.jpg");
-    background-position: right !important;
+@media only screen and (max-width:768px){
 
-    -webkit-mask-attachment: fixed;
-}
-}
+    body{background: url("../img/backMobile.jpg")}
 
-@media screen and (max-width: 768px) and (orientation: landscape){
-    html {
- background-color: #209cee;
-
-    }
 
 }
-@media screen and (min-width: 768px) {
-    html {
+
+@media only screen and (min-width:768px){
+
+    body{
         background: url("../img/backDesk.jpg");
-        background-size: cover;
+        background-size: cover !important;
         background-attachment: fixed;
-
-
     }
+
 
 }
 

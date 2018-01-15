@@ -205,22 +205,22 @@ var app = new Vue({
 
 
         getPage2: function () {
-            this.page1 = false;
-           setTimeout(damePagina2, 1000);
+
+           damePagina2();
            function damePagina2() {
 
                app.page2=true;
 
 
             }
-
+            this.page1 = false;
         },
 
 
         getPage3: function () {
 
             this.page2 = false;
-            setTimeout(damePagina3, 1000);
+            setTimeout(damePagina3, 100);
             function damePagina3() {
 
                 app.page3=true;
@@ -233,7 +233,7 @@ var app = new Vue({
         getPage4: function () {
 
             this.page3 = false;
-            setTimeout(damePagina4, 1000);
+            setTimeout(damePagina4, 100);
             function damePagina4() {
 
                 app.page4=true;
