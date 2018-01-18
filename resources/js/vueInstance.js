@@ -1,11 +1,11 @@
 
 var resultadoTemplate = {
-    template: '<div class="modal-wrapper title is-2">Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}.</div>',
+    template:'<div class="container"><p class="title is-1"> Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}.</p></div>',
     props:['recibeprimero', 'recibesegundo', 'recibeultimo','recibediferencia'],
     computed: {
           diferenciaAplicada: function () {
               if (this.recibediferencia===0){
-                return this.diferencia='prácticamente en la misma sintonía de';
+                return this.diferencia='prácticamente en la misma sintonía que';
           }
               else if(this.recibediferencia===1){
                 return this.diferencia='bastante cerca de la línea de'
@@ -15,10 +15,12 @@ var resultadoTemplate = {
             else if(this.recibediferencia===2){
               return this.diferencia='cerca de la línea'
               }
-          }
-    },
-}
+          },
 
+    },
+
+
+}
 
 var app = new Vue({
     el: '#app',
@@ -83,6 +85,8 @@ var app = new Vue({
         page3: false,
         page4: false,
         intro: true,
+
+        musica:true,
 
         totales: [],
 
@@ -369,9 +373,10 @@ var app = new Vue({
 
 
 
-//Cerrar quiz div
+//Cerrar quiz div y sacar intro
 
             this.page4=false;
+            this.intro=false;
 //Calcular primero y segundo
 
             function findIndicesOfMax(inp, count) {
@@ -450,15 +455,15 @@ var app = new Vue({
                     break
                 }
                 case 5 : {
-                    app.primero = 'Fernando \"Chino\" Navarro';
+                    app.primero = 'Fernando Chino Navarro';
                     break
                 }
                 case 6 : {
-                    app.primero = 'Agustín \"Chivo\" Rossi';
+                    app.primero = 'Agustín Chivo Rossi';
                     break
                 }
                 case 7 : {
-                    app.primero = 'Andrés \"Cuervo\" Larroque';
+                    app.primero = 'Andrés Cuervo Larroque';
                     break
                 }
             }
@@ -534,8 +539,15 @@ var app = new Vue({
             }
         },
 
-    },
+        cerrarModal : function (event) {
+               var button = event.currentTarget;
+               var parent= button.parentNode.parentNode.parentNode;
+               parent.classList.remove('is-active')
 
+
+            }
+
+    },
 
 });
 
