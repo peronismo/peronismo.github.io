@@ -1,9 +1,13 @@
 @media only screen and (max-width:768px){
-  body{
+  html{
 
 
-    background: url("../img/backMobile.png");
-    background-repeat: repeat;}
+   background-image: url("../img/backMobile.png");
+
+
+    background-position: center;
+      background-repeat: repeat;
+  }
 
     #intro{
 
@@ -94,7 +98,7 @@ html{
 
         background-color: #209cee;
     }
-    
+
  #intro{
 
      background-image: url("../img/hero1.jpg");
@@ -125,7 +129,7 @@ html{
 
 
     body {
-        background: url("../img/backDesk.jpg");
+        background: url("../img/Peron-y-Evita-HD-2.jpg");
         background-size: cover !important;
         background-attachment: fixed;
     }
