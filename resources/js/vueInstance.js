@@ -8,7 +8,7 @@ var resultadoTemplate = {
                 return this.diferencia='prácticamente en la misma sintonía que';
           }
               else if(this.recibediferencia===1){
-                return this.diferencia='bastante cerca de la línea de'
+                return this.diferencia='bastante cerca de la línea'
 
             }
 

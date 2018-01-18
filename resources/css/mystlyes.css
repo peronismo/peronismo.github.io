@@ -10,11 +10,43 @@
         background-image: url("../img/hero1.jpg");
         background-size: cover;
     }
+    #help{
 
+        background-color: rgba(255,255,255, 0.8);
+
+    }
+
+    .columns{
+        border: solid 3px black;
+        border-radius: 5px;
+        margin-top: 50px;
+        background-color: rgba(255,255,255, 0.8);
+        color: black;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    #contenidoAyuda{
+
+        color: black;
+        font-weight: bold;
+    }
     .button{
 
         display: flex;
         font-weight: bolder;
+        background-color: whitesmoke;
+        border: 0.1em solid rgba(0,0,0, 0.8)
+
+    }
+
+    .button:active {
+
+        box-shadow: 0px 0px 2px 0.5px #aaa;
+        border: 0.1em solid rgba(0,0,0, 0.8);
+        background-color: rgba(255, 221, 87, 0.85);
+        transition: 0.3s;
+
     }
 
     #headerModal1, #headerModal2, #headerModal3, #headerModal4, #headerModal5, #headerModal6, #headerModal7, #headerModal8{
@@ -66,8 +98,20 @@ html{
 
      background-image: url("../img/hero1.jpg");
      background-size: cover;
+
  }
 
+ #help{
+
+     background-color: rgba(255,255,255, 0.8);
+
+ }
+
+#contenidoAyuda{
+
+    color: black;
+
+}
     body {
         background: url("../img/backDesk.jpg");
         background-size: cover !important;
@@ -76,15 +120,32 @@ html{
 
     .button {
 
-        display: flex;
-        font-weight: bolder;
+       display: flex;
+       font-weight: bolder;
+       background-color: whitesmoke;
+       border: 0.1em solid rgba(0,0,0, 0.8)
 
     }
+    .button:hover {
+
+       box-shadow: 0px 0px 2px 0.5px #aaa;
+       border: 0.1em solid rgba(0,0,0, 0.8);
+       background-color: rgba(255, 221, 87, 0.85);
+       transition: 0.3s;
+
+    }
+
     .columns {
 
-        border: solid 5px #ffdd57;
+        border: solid 4px black;
         border-radius: 10px;
-        margin-top: 50px;}
+        margin-top: 50px;
+        background-color: rgba(255,255,255, 0.8);
+        color: black;
+        text-align: center;
+    }
+
+
 
 
     #headerModal1, #headerModal2, #headerModal3, #headerModal4, #headerModal5, #headerModal6, #headerModal7, #headerModal8 {
