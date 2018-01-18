@@ -1,6 +1,6 @@
 
 var resultadoTemplate = {
-    template:'<div id="resultado" class="hero is-fullheight"><p class="title is-1"> Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}</p></div>',
+    template:'<div id="resultado" class="hero is-fullheight"><p class="title is-1"> Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}</div>',
     props:['recibeprimero', 'recibesegundo', 'recibeultimo','recibediferencia'],
     computed: {
           diferenciaAplicada: function () {
@@ -18,7 +18,7 @@ var resultadoTemplate = {
 
            if (this.recibeprimero=='Fernando Chino Navarro'){this.recibeprimero='Fernando "Chino" Navarro'}
            else  if (this.recibeprimero=='Agustín Chivo Rossi'){this.recibeprimero='Agustín "Chivo" Rossi'}
-           else  if (this.recibeprimero=='Andrés Cuervo Larroque'){this.recibeprimero='Andrés "Cuervo" Larroque'};
+           else  if (this.recibeprimero=='Andrés Cuervo Larroque'){this.recibeprimero='Andrés "Cuervo" '};
           },
 
     },
