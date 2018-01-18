@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     <link rel="stylesheet" href="resources/css/mystlyes.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap:700|Montserrat|Short+Stack" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test peronista</title>
@@ -335,19 +336,18 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
     </div>
 
+    <section id="intro" class="hero is-fullheight" v-if="intro">
 
-
-    <section id="intro" class="hero is-fullheight is-info" v-if="intro">
 
        <div id="containerIntro" class="container">
 
 
-            <section class="hero is-small">
+
 
                 <div id="ayuda" class="hero-body">
                     <article id="help" class="message is-warning container is-fluid">
                         <header class="message-header">
-                            <h4 class="has-text-weight-bold is-size-4">¿Cómo funciona el test?</h4>
+                            <h4 class="has-text-weight-bold is-size-4" id="comoFunciona">¿Cómo funciona el test?</h4>
                             <button class="delete" aria-label="Quitar ayuda" @click="removeHelp"></button>
                         </header>
                         <div class="message-body content is-size-5" id="contenidoAyuda">
@@ -360,10 +360,15 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                         </div>
                     </article>
                 </div>
-            </section>
+
         </div>
 
+
     </section>
+
+
+
+
 
     <!----------Pregunta 1---------->
 

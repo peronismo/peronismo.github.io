@@ -105,14 +105,25 @@ html{
  #help{
 
      background-color: rgba(255,255,255, 0.8);
+     font-family: Asap;
 
  }
 
-#contenidoAyuda{
+
+    #help li{ font-family: Asap;
+    }
+
+    #comoFunciona{ font-family:Asap
+    }
+
+
+    #contenidoAyuda{
 
     color: black;
 
 }
+
+
     body {
         background: url("../img/backDesk.jpg");
         background-size: cover !important;
@@ -122,6 +133,7 @@ html{
     .button {
 
        display: flex;
+       font-family: Montserrat;
        font-weight: bolder;
        background-color: whitesmoke;
 
