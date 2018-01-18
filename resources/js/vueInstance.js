@@ -18,7 +18,7 @@ var resultadoTemplate = {
 
            if (this.recibeprimero=='Fernando Chino Navarro'){this.recibeprimero='Fernando "Chino" Navarro'}
            else  if (this.recibeprimero=='Agustín Chivo Rossi'){this.recibeprimero='Agustín "Chivo" Rossi'}
-           else  if (this.recibeprimero=='Andrés Cuervo Larroque'){this.recibeprimero='Andrés "Cuervo" '};
+           else  if (this.recibeprimero=='Andrés Cuervo Larroque'){this.recibeprimero='Andrés "Cuervo" Larroque'};
           },
 
     },
