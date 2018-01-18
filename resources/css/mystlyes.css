@@ -36,6 +36,12 @@
 
 
     }
+
+    #res{
+
+        background-image: url("../img/imagenRes.jpg");
+
+    }
     .button{
 
         display: flex;
@@ -113,11 +119,16 @@ html{
 
  }
 
-
-    #help li{ font-family: Asap;
+    #q1,#q2,#q3,#q4{
+       font-family: Montserrat;
     }
 
-    #comoFunciona{ font-family:Asap
+    #help li{
+        font-family: Asap;
+    }
+
+    #comoFunciona{
+        font-family:Asap
     }
 
 
@@ -162,7 +173,11 @@ html{
         text-align: center;
     }
 
+#res{
+    
+    background-image: url("../img/imagenRes.jpg");
 
+}
 
 
     #headerModal1, #headerModal2, #headerModal3, #headerModal4, #headerModal5, #headerModal6, #headerModal7, #headerModal8 {

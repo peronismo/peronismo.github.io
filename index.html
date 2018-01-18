@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     <link rel="stylesheet" href="resources/css/mystlyes.css">
-    <link href="https://fonts.googleapis.com/css?family=Asap:700|Montserrat|Short+Stack" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap:700|Montserrat" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test peronista</title>
@@ -35,10 +35,11 @@
 
 <body>
 <div id="app">
-
     <div id="res" class="hero is-fullheight is-info" v-if="primero">
+    <componente-resultado v-if="primero" v-bind:recibeprimero="primero" v-bind:recibesegundo="segundo" v-bind:recibeultimo="ultimo" v-bind:recibediferencia="diferencia"></componente-resultado>
+
     <section id="resultado" class="container has-text-centered">
-        <componente-resultado v-if="primero" v-bind:recibeprimero="primero" v-bind:recibesegundo="segundo" v-bind:recibeultimo="ultimo" v-bind:recibediferencia="diferencia" class="modal-wrapper"></componente-resultado>
+
 
 
         <template v-if="primero=='Julio Bárbaro'">
@@ -48,7 +49,7 @@
                 <div class="modal-card">
                     <header class="modal-card-head" id="headerModal1">
                         <p class="modal-card-title" id="tituloModal1">Sos peronista línea...</p>
-                        <button class="delete" id="cerrarModal" @click="cerrarModal($event)" aria-label="close"></button>
+                        <button class="delete" id="cerrarModal" @click="cerrarModal($event),reemplazar()" aria-label="close"></button>
 
                     </header>
 
@@ -385,7 +386,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
                 <div class="columns">
                     <div class="column is-6" style="margin: auto 0">
-                        <p id="a2" class="is-size-3-desktop is-size-4-mobile has-text-centered"></i> Debe ser racional y propositivo. El pueblo no quiere políticos que se opongan por oponerse.</p>
+                        <p id="a2" class="is-size-3-desktop is-size-4-mobile has-text-centered">Debe ser racional y propositivo. El pueblo no quiere políticos que se opongan por oponerse.</p>
                     </div>
                         <div class="column is-6 buttons has-addons is-centered is-large" style="margin: auto">
                             <div class="column is-6" style="margin: auto">
@@ -933,7 +934,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 </div><!--app-->
 <script src="resources/js/vue.js"></script>
 <script src="resources/js/vueInstance.js"></script>
-
+<script src="resources/js/tweet.js"></script>
 
 </body>
 </html>

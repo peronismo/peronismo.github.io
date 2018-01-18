@@ -1,6 +1,7 @@
 
 var resultadoTemplate = {
-    template:'<div class="container"><p class="title is-1"> Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}.</p></div>',
+    template:'<div id="resultado" class="hero is-fullheight"><p class="title is-1"> Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}<br> <a class="twitter-share-button"href="https://twitter.com/intent/tweet?text=Prueba" data-size="large">Tweet</a></p></div>',
+    template:'<div id="resultado" class="hero is-fullheight"><p class="title is-1"> Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}. <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a></p></div>',
     props:['recibeprimero', 'recibesegundo', 'recibeultimo','recibediferencia'],
     computed: {
           diferenciaAplicada: function () {
@@ -15,9 +16,18 @@ var resultadoTemplate = {
             else if(this.recibediferencia===2){
               return this.diferencia='cerca de la línea'
               }
+
+           if (this.recibeprimero=='Fernando Chino Navarro'){this.recibeprimero='Fernando "Chino" Navarro'}
+           else  if (this.recibeprimero=='Agustín Chivo Rossi'){this.recibeprimero='Agustín "Chivo" Rossi'}
+           else  if (this.recibeprimero=='Andrés Cuervo Larroque'){this.recibeprimero='Andrés "Cuervo" '};
           },
 
     },
+    recibe: function () {
+
+
+        alert('al')
+    }
 
 
 }
