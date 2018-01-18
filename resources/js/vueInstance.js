@@ -1,7 +1,6 @@
 
 var resultadoTemplate = {
-    template:'<div id="resultado" class="hero is-fullheight"><p class="title is-1"> Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}<br> <a class="twitter-share-button"href="https://twitter.com/intent/tweet?text=Prueba" data-size="large">Tweet</a></p></div>',
-    template:'<div id="resultado" class="hero is-fullheight"><p class="title is-1"> Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}. <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a></p></div>',
+    template:'<div id="resultado" class="hero is-fullheight"><p class="title is-1"> Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}</p></div>',
     props:['recibeprimero', 'recibesegundo', 'recibeultimo','recibediferencia'],
     computed: {
           diferenciaAplicada: function () {
