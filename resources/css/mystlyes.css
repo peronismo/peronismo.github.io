@@ -29,14 +29,15 @@
     #contenidoAyuda{
 
         color: black;
-        font-weight: bold;
+
+
     }
     .button{
 
         display: flex;
         font-weight: bolder;
         background-color: whitesmoke;
-        border: 0.1em solid rgba(0,0,0, 0.8)
+
 
     }
 
@@ -123,7 +124,7 @@ html{
        display: flex;
        font-weight: bolder;
        background-color: whitesmoke;
-       border: 0.1em solid rgba(0,0,0, 0.8)
+
 
     }
     .button:hover {
