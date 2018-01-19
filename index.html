@@ -113,7 +113,7 @@
                <div class="modal-card">
                    <header class="modal-card-head" id="headerModal2">
                        <p class="modal-card-title" id="tituloModal2">Sos peronista línea...</p>
-                       <button class="delete" id="cerrarModal2" @click="cerrarModal($event)" aria-label="close"></button>
+                       <button class="delete" id="cerrarModal2" @click="cerrarModal($event), shareButtons() aria-label="close"></button>
 
                    </header>
 
@@ -130,8 +130,9 @@
                        A medida que observabas la creciente radicalización izquierdista de Cristina, fuiste perdiendo el entusiasmo. Hoy la ves como la mariscal de la derrota, por eso querés una renovación que no la incluya.<br>
                        Lo más importante para el peronismo es disputar el poder. La táctica antes que la ideología. Por eso sos partidario de votarle leyes al macrismo, si significan fondos para las Provincias.<br>
                        Estas preferencias te valen ser increpado por algunos compañeros. Sumado a que repudian tu tendencia conservadora, te reprochan que abandonaste las banderas del peronismo y que te prostituís a cambio del dinero oficialista.<br> A vos todo eso te tiene sin cuidado y hacés bien. Es que equivocados o no, apresurados o retardatarios, peronistas somos todos.</p>
+                       <span style="font-weight:bold;display: block;margin: 30px auto"><button class="button is-link" style="display: block;width: 50%;margin: 0 auto" @click="cerrarModal2($event), shareButtons()">Continuar</button></span>
                        <div v-if="musica">
-                           <span style="background-color:#ffdd57; color:black; font-weight:bold; display: block;">"Los muchachos peronistas"<br> (Hugo del Carril)</span>
+                       <span style="background-color:#ffdd57; color:black; font-weight:bold; display: block;">"Los muchachos peronistas"<br> (Hugo del Carril)</span>
                            <audio src="resources/audio/marchaClasica.mp3" type="audio/mpeg" autoplay="autoplay" buffered="buffered" controls="controls" preload="auto"></audio></div>
 
 
@@ -149,7 +150,7 @@
                 <div class="modal-card">
                     <header class="modal-card-head" id="headerModal3">
                         <p class="modal-card-title" id="tituloModal3">Sos peronista línea...</p>
-                        <button class="delete" id="cerrarModal3" @click="cerrarModal($event)" aria-label="close"></button>
+                        <button class="delete" id="cerrarModal3" @click="cerrarModal($event), shareButtons()" aria-label="close"></button>
 
                     </header>
 
@@ -167,6 +168,7 @@ Planteás que hacia 2019 el peronismo debe renovarse, ofreciendo una propuesta q
 Te distingue de algunos compañeros la idea de que hay que estar siempre atento a lo que piensa el votante "swinger", ese que no se identifica con ningún partido, es volátil y según se decante, decide las elecciones. Por eso prestás mucha atención a encuestas y el humor social del momento.
     Esto te lleva a estar constante cambio y transformación, razón por la cual tus detractores, tanto por izquierda como por derecha, te recriminan. Te dicen que no tenes convicciones, que sos panqueque: un kirchnerista encubierto, o que sos un traidor que cambió la doctrina peronista por los estudios de opinión.<br>
       A vos todo eso te tiene sin cuidado y hacés bien. Porque equivocados o no, combativos o moderados,  peronistas somos todos.</p>
+                        <span style="font-weight:bold;display: block;margin: 30px auto"><button class="button is-link" style="display: block;width: 50%;margin: 0 auto" @click="cerrarModal2($event), shareButtons()">Continuar</button></span>
                         <div v-if="musica">
                             <span style="background-color:#ffdd57; color:black; font-weight:bold; display: block;">"Los muchachos peronistas"<br> (Hugo del Carril)</span>
                             <audio src="resources/audio/marchaClasica.mp3" type="audio/mpeg" autoplay="autoplay" buffered="buffered" controls="controls" preload="auto"></audio></div>
@@ -184,7 +186,7 @@ Te distingue de algunos compañeros la idea de que hay que estar siempre atento 
                 <div class="modal-card">
                     <header class="modal-card-head" id="headerModal4">
                         <p class="modal-card-title" id="tituloModal4">Sos peronista línea...</p>
-                        <button class="delete" id="cerrarModal4" @click="cerrarModal($event)" aria-label="close"></button>
+                        <button class="delete" id="cerrarModal4" @click="cerrarModal($event), shareButtons()" aria-label="close"></button>
 
                     </header>
 
@@ -200,10 +202,8 @@ Te distingue de algunos compañeros la idea de que hay que estar siempre atento 
                         Sos de los que sostienen que es necesaria una renovación, apuntalando intententes jóvenes de la Provincia de Buenos Aires. Sin embargo, entendés que por el caudal de votos que maneja Cristina, es imposible dejarla afuera de un armado que pueda resultar victorioso.<br> Bancás al anterior gobierno pero con reparos. Creés que se perdió porque no se le puso suficiente atención a reclamos como el de mayor seguridad o ajustar el piso del Impuesto a las Ganancias. <br>
                        Querés un gran frente electoral que no deje afuera a nadie que sea opositor a Macri. Lo más importante para vos es que el peronismo cambie del discurso, las formas. Que sean más amenas para el ciudadano de a pie. Menos agresivas, con menos carga ideológica y mucho más énfasis en cuestiones puntuales de gestión.<br>
 Algunos compañeros te recriminan no cortar lazos con Cristina, a la que ven como mariscal de la derrota. Otros te señalan no tener suficiente compromiso con ella o te remarcan lo que perciben como una fluctuación del grado de apoyo y lealtad que le profesás. Tampoco les gusta tu idea de negociación constante con el oficialismo. Te tachan de tibio, de no tener convicciones.<br>
-                        A vos todo eso te tiene sin cuidado y hacés bien. Porque equivocados o no, combativos o moderados, peronistas somos todos.
-
-
-                    </p>
+                        A vos todo eso te tiene sin cuidado y hacés bien. Porque equivocados o no, combativos o moderados, peronistas somos todos.</p>
+                        <span style="font-weight:bold;display: block;margin: 30px auto"><button class="button is-link" style="display: block;width: 50%;margin: 0 auto" @click="cerrarModal2($event), shareButtons()">Continuar</button></span>
                         <div v-if="musica">
                             <span style="background-color:#ffdd57; color:black; font-weight:bold; display: block;">"Los muchachos peronistas"<br> (Hugo del Carril)</span>
                             <audio src="resources/audio/marchaClasica.mp3" type="audio/mpeg" autoplay="autoplay" buffered="buffered" controls="controls" preload="auto"></audio></div>
@@ -221,7 +221,7 @@ Algunos compañeros te recriminan no cortar lazos con Cristina, a la que ven com
                 <div class="modal-card">
                     <header class="modal-card-head" id="headerModal5">
                         <p class="modal-card-title" id="tituloModal5">Sos peronista línea...</p>
-                        <button class="delete" id="cerrarModal5" @click="cerrarModal($event)" aria-label="close"></button>
+                        <button class="delete" id="cerrarModal5" @click="cerrarModal($event), shareButtons()" aria-label="close"></button>
 
                     </header>
 
@@ -236,9 +236,8 @@ Algunos compañeros te recriminan no cortar lazos con Cristina, a la que ven com
                             <span style="background-color:#ffdd57;font-weight:bold;display: block">Descripción</span> <p> <br>Tu obsesión es la unión del peronismo en todas sus expresiones. Creés que es una falta de respeto hablar de "traidores" o, en el peor de los casos, un infantilismo de una parte progresista-liberal del campo nacional y popular, de gente recién llegada al peronismo y que todavía no lo entiende del todo. Estos que buscan un armado de "puros" son los que deberían quedar afuera o pensárselo mejor antes de señalar con el dedo a compañeros y excluirlos.<br>
  Como buen soldado de Perón bancaste a Néstor y Cristina.<br>
 Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana deben estar juntos, de esa forma, arrasarían en los comicios. Esa unidad sería lo mejor que le puede pasar al peronismo simplemente porque sería lo peor que le puede pasar al enemigo que tenés claramente identificado: la oligarquía.<br>
-        Dicen que estás un poco loco, que con tu lengua belicosa no convencés a nadie o hasta espantás a la gente, pero no tenés tiempo para escuchar esas críticas. Toda tu voluntad está puesta en una cosa solamente: ser un auténtico soldado de tu pueblo, ser un auténtico soldado de Perón.
-
-                    </p>
+        Dicen que estás un poco loco, que con tu lengua belicosa no convencés a nadie o hasta espantás a la gente, pero no tenés tiempo para escuchar esas críticas. Toda tu voluntad está puesta en una cosa solamente: ser un auténtico soldado de tu pueblo, ser un auténtico soldado de Perón. </p>
+                        <span style="font-weight:bold;display: block;margin: 30px auto"><button class="button is-link" style="display: block;width: 50%;margin: 0 auto" @click="cerrarModal2($event), shareButtons()">Continuar</button></span>
                         <div v-if="musica">
                             <span style="background-color:#ffdd57; color:black; font-weight:bold; display: block;">"Estoy orgulloso de mi General"<br> (Leonardo Favio)</span>
                             <audio src="resources/audio/orgullosoDeMiGral.mp3" type="audio/mpeg" autoplay="autoplay" buffered="buffered" controls="controls" preload="auto"></audio></div>
@@ -256,7 +255,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                 <div class="modal-card">
                     <header class="modal-card-head" id="headerModal6">
                         <p class="modal-card-title" id="tituloModal6">Sos peronista línea...</p>
-                        <button class="delete" id="cerrarModal6" @click="cerrarModal($event)" aria-label="close"></button>
+                        <button class="delete" id="cerrarModal6" @click="cerrarModal($event), shareButtons()" aria-label="close"></button>
 
                     </header>
 
@@ -274,7 +273,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                         Por todo esto buscás nuevos dirigentes con proyección a futuro y capacidad de un liderazgo más inclusivo. Quizás percibas a Florencio Randazzo como uno de ellos.<br>
  No das tregua en la defensa de los descartados por el sistema y vas a dar todo de vos para vencer a la derecha en las urnas e ir por todo lo que falta.
                     </p>
-
+                        <span style="font-weight:bold;display: block;margin: 30px auto"><button class="button is-link" style="display: block;width: 50%;margin: 0 auto" @click="cerrarModal2($event), shareButtons()">Continuar</button></span>
                         <div v-if="musica">
                             <span style="background-color:#ffdd57; color:black; font-weight:bold; display: block;"> Mix: "Juguetes perdidos" (Redonditos de Ricota) + "Abran paso, llegó la JP"</span>
                             <audio src="resources/audio/evita.mp3" type="audio/mpeg" autoplay="autoplay" buffered="buffered" controls="controls" preload="auto"></audio></div>
@@ -304,12 +303,10 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
          <p>Pocos se atreven a cuestionar tu peronismo, menos aún se animan a cuestionar tu kirchnerismo.<br>
                 Tenés vocación frentista, querés la mayor cantidad de peronistas unidos, siempre y cuando se respete un programa, un conjunto de ideas que sean principios ordenadores, más que los nombres propios.<br>
                 A diferencia de otros sectores del kirchnerismo duro, no concordás con la idea alfonsinista de que "si la sociedad se derechiza hay que prepararse para perder elecciones", o de buscar un armado progresista totalmente nuevo junto a los sectores de la izquierda más anti-peronista, mientras esperamos que el pueblo se canse de Macri o explote la economía. Preferís proponer una alianza competitiva y por eso seguramente querés tender puentes con esos compañeros que alguna vez estuvieron y se fueron. Aquellos que hoy quizás ceden a las presiones del macrismo, por miedo al "carpetazo" o por falta de convicción. Quizás imaginás un acercamiento a aquellos sectores que pueden aportar densidad política y gobernabilidad a un proyecto que toque intereses. Y que aporten un sostén en momentos tensos, como supo hacer el moyanismo durante los gobiernos kirchneristas.<br>
-                Algunos compañeros te dirán que estás demasiado omnubilidado con la figura de Cristina, que te fanatizaste. Será porque no la consideran peronista o la ven demasiado progresista para su gusto. Y por extensión, a vos también. Pero no dudás en bancarla, ella te representa, admirás su inteligencia, su compromiso con el pueblo.Además sabes que equivocados o no, apresurados o retardatarios, peronistas somos todos. <br>
-
-            </p>
-
-                <div v-if="musica">
-                    <span style="background-color:#ffdd57; color:black; font-weight:bold; display: block;"> Mix: "Marcha de la bronca" (Miguel Cantilo & Amigos) + "Nos nos han vencido"</span>
+                Algunos compañeros te dirán que estás demasiado omnubilidado con la figura de Cristina, que te fanatizaste. Será porque no la consideran peronista o la ven demasiado progresista para su gusto. Y por extensión, a vos también. Pero no dudás en bancarla, ella te representa, admirás su inteligencia, su compromiso con el pueblo.Además sabes que equivocados o no, apresurados o retardatarios, peronistas somos todos. </p>
+                       <span style="font-weight:bold;display: block;margin: 30px auto"><button class="button is-link" style="display: block;width: 50%;margin: 0 auto" @click="cerrarModal2($event), shareButtons()">Continuar</button></span>
+                       <div v-if="musica">
+                       <span style="background-color:#ffdd57; color:black; font-weight:bold; display: block;"> Mix: "Marcha de la bronca" (Miguel Cantilo & Amigos) + "Nos nos han vencido"</span>
                         <audio src="resources/audio/chivo.mp3" type="audio/mpeg" autoplay="autoplay" buffered="buffered" controls="controls" preload="auto"></audio></div>
 
 
@@ -343,8 +340,8 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                         Como sabés que indefectiblemente Macri nos lleva a un estallido económico, y no ves posiblidades de que el pejotismo se le plante a Macri, ni chances de que acepte a CFK estás, como decía Alfonsín, si es que el electorado sigue corrido a la derecha, preparándote para perder la elección. Priorizás dar un mensaje contundente y claro al pueblo de que somos distintos, confrontar modelos. Estar listos para cuando el pueblo se canse y lo quiera echar. <br>
                         Tus detractores dirán que sos apresurado, que vas más a la izquierda de lo que el pueblo puede digerir. Que tu purismo nos lleva a una nueva derrota. Algunos sacarán el peronómetro y te acusarán de "trosko", se burlarán de tu apoyo incondicional a Cristina. Pero no dudás en bancarla, ella te representa, admirás su inteligencia, su compromiso con el pueblo. Bien sabés que equivocados o no, apresurados o retardatarios, peronistas somos todos.
                     </p>
-
-                        <div v-if="musica">
+                    <span style="font-weight:bold;display: block;margin: 30px auto"><button class="button is-link" style="display: block;width: 50%;margin: 0 auto" @click="cerrarModal2($event), shareButtons()">Continuar</button></span>
+                    <div v-if="musica">
                             <span style="background-color:#ffdd57; color:black; font-weight:bold; display: block;"> Mix: "Nuestro amo juega al esclavo" (Redonditos de Ricota) + "No nos han vencido"</span>
                             <audio src="resources/audio/mixLarroque.mp3" type="audio/mpeg" autoplay="autoplay" buffered="buffered" controls="controls" preload="auto"></audio></div>
 

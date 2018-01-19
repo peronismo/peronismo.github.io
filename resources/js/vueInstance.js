@@ -616,6 +616,9 @@ var app = new Vue({
 
 
         getPage2: function () {
+            var preg2 = document.querySelector('#pregunta1');
+            preg2.scrollIntoView();
+
 
             damePagina2();
             function damePagina2() {
@@ -626,11 +629,14 @@ var app = new Vue({
             }
 
             this.page1 = false;
-            setTimeout(window.scrollTo(0, 1000), 100);
+
         },
 
 
         getPage3: function () {
+            var preg3 = document.querySelector('#pregunta2');
+            preg3.scrollIntoView(true);
+
             damePagina3();
 
             function damePagina3() {
@@ -641,11 +647,13 @@ var app = new Vue({
             }
 
             this.page2 = false;
-            setTimeout(window.scrollTo(0, 1000), 100);
+
         },
 
 
         getPage4: function () {
+            var preg4 = document.querySelector('#pregunta3');
+            preg4.scrollIntoView(true);
 
             damePagina4();
             function damePagina4() {
@@ -656,7 +664,7 @@ var app = new Vue({
             }
 
             this.page3 = false;
-            setTimeout(window.scrollTo(0, 1000), 100);
+
         },
 
         removeHelp: function () {
