@@ -1,11 +1,19 @@
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content='width=device-width, initial-scale=1'>
+    <meta name="viewport" content='width=device-width, initial-scale=1'>
+    <meta property="og:title" content="Test de Coyuntura Peronista">
+    <meta property="og:description" content="¿Qué linea peronista te identifica?">
+    <meta property="og:image" content="thumbnail_image">
+    <meta name="description" content="Test de coyuntura peronista: ¿Qué línea te identifica?">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     <link rel="stylesheet" href="resources/css/mystlyes.css">
     <link href="https://fonts.googleapis.com/css?family=Asap:700|Montserrat" rel="stylesheet">
+
+    <link rel="alternate" type="application/json+oembed"
+          href="https://codepen.io/api/oembed?url=https://codepen.io/Huskie/pen/wKphk&format=json"
+          title="Test de Coyuntura peronista" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test peronista</title>
@@ -35,10 +43,29 @@
 
 <body>
 <div id="app">
-    <div id="res" class="hero is-fullheight is-info" v-if="primero">
-    <componente-resultado v-if="primero" v-bind:recibeprimero="primero" v-bind:recibesegundo="segundo" v-bind:recibeultimo="ultimo" v-bind:recibediferencia="diferencia"></componente-resultado>
+<section id="res" v-if="primero" class="hero is-fullheight">
+    <div class="hero-body">
+        <article id="resultadoCuadro" class="message is-info">
+            <div class="message-header">
+                <p class="title is-3" id="tituloRes">Tu resultado</p>
 
-        <section id="resultado" class="container has-text-centered">
+            </div>
+            <div class="message-body">
+                <componente-resultado v-if="primero" v-bind:recibeprimero="primero" v-bind:recibesegundo="segundo" v-bind:recibeultimo="ultimo" v-bind:recibediferencia="diferencia"></componente-resultado>
+            </div>
+        </article>
+    </div>
+
+<div id="buttonShare">
+         <button id="tw" class="button is-large is-primary twitter-share" data-js="twitter-share" @click="twitter($event)"> <i class="fa fa-twitter"></i>&nbsp;Compartir en Twitter</button>
+         <button id="fb" class="button is-large is-link facebook-share" data-js="facebook-share" @click="facebook($event)"> <i class="fa fa-facebook"></i> &nbsp;Compartir en Facebook</button></div>
+
+</section>
+     <section id="resultado" class="container has-text-centered">
+
+
+
+
 
 
         <template v-if="primero=='Julio Bárbaro'">
@@ -48,7 +75,7 @@
                 <div class="modal-card">
                     <header class="modal-card-head" id="headerModal1">
                         <p class="modal-card-title" id="tituloModal1">Sos peronista línea...</p>
-                        <button class="delete" id="cerrarModal" @click="cerrarModal($event),reemplazar()" aria-label="close"></button>
+                        <button class="delete" id="cerrarModal" @click="cerrarModal($event), shareButtons()" aria-label="close"></button>
 
                     </header>
 
@@ -64,7 +91,8 @@
     Detestás a Cristina. Querés verla a ella y a los suyos desaparecer del mapa político argentino.<br>
                          Festejaste la llegada de Macri porque indicaba el fin de la pesadilla del autoritarismo K, pero ahora estás un poquito espantado.<br>
                          Algunos compañeros quizás te acusen de creerte un oligarca y de haber bajado las banderas peronistas. Pero a vos no te importa y hacés bien. Es que equivocados o no, apresurados o retardatarios, peronistas somos todos.</p>
-                         <div v-if="musica">
+                        <span style="font-weight:bold;display: block;margin: 30px auto"><button class="button is-link" style="display: block;width: 50%;margin: 0 auto" @click="cerrarModal2($event), shareButtons()">Continuar</button></span>
+                        <div v-if="musica">
                          <span style="background-color:#ffdd57; color:black; font-weight:bold; display: block;">"Los muchachos peronistas"<br> (Hugo del Carril)</span>
                            <audio src="resources/audio/marchaClasica.mp3" type="audio/mpeg" autoplay="autoplay" buffered="buffered" controls="controls" preload="auto"></audio></div>
 
@@ -264,7 +292,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                 <div class="modal-card">
                     <header class="modal-card-head" id="headerModal7">
                         <p class="modal-card-title" id="tituloModal7">Sos peronista línea...</p>
-                        <button class="delete" id="cerrarModal7" @click="cerrarModal($event)" aria-label="close"></button>
+                        <button class="delete" id="cerrarModal7" @click="cerrarModal($event), shareButtons()" aria-label="close"></button>
                     </header>
                     <section class="modal-card-body is-fluid" id="cuerpoModal7">
                         <img src="resources/img/7.jpg" class="imagenModal">
@@ -298,7 +326,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                 <div class="modal-card">
                     <header class="modal-card-head" id="headerModal8">
                         <p class="modal-card-title" id="tituloModal8">Sos peronista línea...</p>
-                        <button class="delete" id="cerrarModal8" @click="cerrarModal($event)" aria-label="close"></button>
+                        <button class="delete" id="cerrarModal8" @click="cerrarModal($event), shareButtons()" aria-label="close"></button>
 
                     </header>
 
@@ -332,7 +360,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
 
 
-    </div>
+    </section>
 
     <section id="intro" class="hero is-fullheight" v-if="intro">
 
@@ -343,22 +371,37 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
 
                 <div id="ayuda" class="hero-body">
-                    <article id="help" class="message is-warning container is-fluid">
+                    <article id="help" class="message is-warning is-fluid">
                         <header class="message-header">
                             <h4 class="has-text-weight-bold is-size-4" id="comoFunciona">¿Cómo funciona el test?</h4>
                             <button class="delete" aria-label="Quitar ayuda" @click="removeHelp"></button>
                         </header>
                         <div class="message-body content is-size-5" id="contenidoAyuda">
-                            <ul>
-                            <li>Cuatro preguntas</li>
-                            <li>Ocho enunciados que las responden según las distintas visiones que hay en el peronismo. Debés responder en cada uno de ellos qué tan de acuerdo o en desacuerdo estás </li>
+                            <ul class="is-size-5">
+                            <li>Ocho enunciados que responde a cuatro preguntas según las distintas visiones que hay en el peronismo. Debés responder en cada uno de ellos qué tan de acuerdo o en desacuerdo estás </li>
                             <li>Si estás indeciso podés dejar sin seleccionar los botones de un enunciado y pasar al siguiente</li>
                             <li>No es obligatario opinar en todos los casos, pero mientrás más opines, más certero será el resultado</li><br>
                             </ul>
                         </div>
                     </article>
-                </div>
 
+
+                </div>
+           <article id="mainTitleContainer">
+
+               <div id="mainTitlte" class="title is-1 has-text-centered" style="font-family: Montserrat;font-weight: bolder margin-top: 50px; margin-bottom:40px;color: white; text-shadow: black 1px 4px 2px !important;font-size: 60px">
+
+                    Test de coyuntura peronista
+
+               </div>
+               <div id="mainSubtititle" class="has-text-centered subtitle is-3" style="color: white; font-family: Montserrat;text-shadow: black 1px 4px 2px !important; font-weight: bolder">
+
+                   <span style="color:#209cee">  ¿Qué línea interna te identifica más?¿Y cuál menos?</span>
+                   
+               </div>
+               
+               <div class="escudo has-text-centered"><img src="resources/img/wip.png" style="max-width: 280px"></div>
+           </article>
         </div>
 
 
@@ -805,7 +848,8 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="d5" class="is-size-3-desktop is-size-4-mobile has-text-centered" style="margin: auto 0"> Me opongo a hablar de traidores. Cada compañero sabe lo que hace y actúa en consecuencia. Unidad Ciudadana, Cumplir y el Frente Renovador y el PJ: todos juntos, apresurados y retardatarios. Así ganamos por el 60% que sacaba Perón. <br> Sí debemos cuidarnos de los progresistas-liberales, que siempre fueron funcionales a la oligarquía. Esos que estuvieron en la Unión Democrática, los mismos que le hicieron perder la elección a Néstor Kirchner en 2009.</p>
+                                    <p id="d5" class="is-size-3-desktop is-size-4-mobile has-text-centered" style="margin: auto 0">Me opongo a hablar de traidores. Cada compañero sabe lo que hace y actúa en consecuencia. Desde el peronismo se entiende que no se combate a la oligarquía atacando compañeros por diferencias tácticas.
+                                        <br>Unidad Ciudadana, Cumplir, el Frente Renovador y el PJ: todos juntos, apresurados y retardatarios. Así ganamos por el 60% que sacaba Perón y lo sacamos a Macri. <br> Sí debemos enderezar a algunos muchachos en nuestro movimiento que tienen tienen vicios moralistas, progresistas-liberales. Ya le hicieron perder la elección a Néstor Kirchner en 2009. No hay que sacar los pies de plato, no hay que tener ataques de purismo que sean funcionales a la oligarquía. </p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-6" style="margin: auto">
@@ -903,7 +947,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
                             <div class="columns">
                                 <div class="column is-6" style="margin: auto 0">
-                                    <p id="d8" class="is-size-3-desktop is-size-4-mobile has-text-centered" style="margin: auto 0"> Los que votaron con el gobierno para pagarle a los Fondos Buitre o ajustar a los jubilados son traidores, abandonaron la defensa de la justicia social. Con traidores degustadores de sanguchitos, ni a la esquina. Aunque perdamos las elecciones del año que viene, debemos concentrarnos en construir un verdadero frente progresista y estar listos para cuando el pueblo despierte y eche a Macri.</p>
+                                    <p id="d8" class="is-size-3-desktop is-size-4-mobile has-text-centered" style="margin: auto 0"> Los que votaron con el gobierno para pagarle a los Fondos Buitre o ajustar a los jubilados son traidores, abandonaron la defensa de la justicia social. Con traidores degustadores de sanguchitos, ni a la esquina. Aunque perdamos las elecciones del año que viene, debemos concentrarnos en construir un verdadero frente progresista que nos permita estar listos para cuando el pueblo despierte y eche a Macri.</p>
                                 </div>
                                 <div class="column is-6 buttons has-addons is-centered is large" style="margin: auto">
                                     <div class="column is-6" style="margin: auto">
@@ -933,6 +977,24 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 </div><!--app-->
 <script src="resources/js/vue.js"></script>
 <script src="resources/js/vueInstance.js"></script>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId            : '323979294773730',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.11'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 
 </body>

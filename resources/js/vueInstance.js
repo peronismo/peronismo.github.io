@@ -1,6 +1,6 @@
 
 var resultadoTemplate = {
-    template:'<div id="resultado" class="hero is-fullheight"><p class="title is-1"> Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}</div>',
+    template:'<div id="resultadoStmt" style="display: block"><p class="title is-2" style="color: black"> Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}. </p></div>',
     props:['recibeprimero', 'recibesegundo', 'recibeultimo','recibediferencia'],
     computed: {
           diferenciaAplicada: function () {
@@ -8,38 +8,36 @@ var resultadoTemplate = {
                 return this.diferencia='prácticamente en la misma sintonía que';
           }
               else if(this.recibediferencia===1){
-                return this.diferencia='bastante cerca de la línea'
+                return this.diferencia='muy cerca de la línea de'
 
-            }
+          }
 
             else if(this.recibediferencia===2){
-              return this.diferencia='cerca de la línea'
-              }
+              return this.diferencia='bastante cerca de la línea de'
+          }
+
+              else if(this.recibediferencia===3){
+                  return this.diferencia='cerca de la línea de'
+          }
 
            if (this.recibeprimero=='Fernando Chino Navarro'){this.recibeprimero='Fernando "Chino" Navarro'}
            else  if (this.recibeprimero=='Agustín Chivo Rossi'){this.recibeprimero='Agustín "Chivo" Rossi'}
-           else  if (this.recibeprimero=='Andrés Cuervo Larroque'){this.recibeprimero='Andrés "Cuervo" '};
+           else  if (this.recibeprimero=='Andrés Cuervo Larroque'){this.recibeprimero='Andrés "Cuervo" Larroque'};
           },
 
     },
-    recibe: function () {
-
-
-        alert('al')
-    }
-
 
 }
 
 var app = new Vue({
     el: '#app',
-    components:{'componente-resultado': resultadoTemplate},
+    components: {'componente-resultado': resultadoTemplate},
     data: {
 
         julioBarbaro1: 0,
         miguelAngelPichetto1: 0,
         sergioMassa1: 0,
-        martinInsaurralde1:0,
+        martinInsaurralde1: 0,
         guillermoMoreno1: 0,
         chinoNavarro1: 0,
         chivoRossi1: 0,
@@ -49,7 +47,7 @@ var app = new Vue({
         julioBarbaro2: 0,
         miguelAngelPichetto2: 0,
         sergioMassa2: 0,
-        martinInsaurralde2:0,
+        martinInsaurralde2: 0,
         guillermoMoreno2: 0,
         chinoNavarro2: 0,
         chivoRossi2: 0,
@@ -59,34 +57,31 @@ var app = new Vue({
         julioBarbaro3: 0,
         miguelAngelPichetto3: 0,
         sergioMassa3: 0,
-        martinInsaurralde3:0,
+        martinInsaurralde3: 0,
         guillermoMoreno3: 0,
         chinoNavarro3: 0,
         chivoRossi3: 0,
         cuervoLarroque3: 0,
 
 
-
         julioBarbaro4: 0,
         miguelAngelPichetto4: 0,
         sergioMassa4: 0,
-        martinInsaurralde4:0,
+        martinInsaurralde4: 0,
         guillermoMoreno4: 0,
         chinoNavarro4: 0,
         chivoRossi4: 0,
         cuervoLarroque4: 0,
 
 
-
         julioBarbaro: 0,
         miguelAngelPichetto: 0,
         guillermoMoreno: 0,
-        martinInsaurralde:0,
+        martinInsaurralde: 0,
         sergioMassa: 0,
         chinoNavarro: 0,
         chivoRossi: 0,
         cuervoLarroque: 0,
-
 
 
         page1: true,
@@ -95,56 +90,249 @@ var app = new Vue({
         page4: false,
         intro: true,
 
-        musica:true,
+        musica: true,
 
         totales: [],
 
-        primero: '',
+        primero: false,
         segundo: '',
-        diferencia:'',
+        diferencia: '',
         ultimo: '',
+        runtimeEnd: false,
 
 
     },
     methods: {
-            sumar: function (event, quien, cuanto) {
+        sumar: function (event, quien, cuanto) {
             switch (quien) {
 //Switch para saber saber a quien se le suman puntos solo si la variable estaba en cero
-                case 11: { if (this.julioBarbaro1 == 0) { this.julioBarbaro1 += cuanto };break}
-                case 12: { if (this.miguelAngelPichetto1 == 0) {this.miguelAngelPichetto1 += cuanto};break}
-                case 13: { if (this.sergioMassa1 == 0) { this.sergioMassa1 += cuanto};break}
-                case 14: { if (this.martinInsaurralde1 == 0) { this.martinInsaurralde1 += cuanto};break}
-                case 15: { if (this.guillermoMoreno1 == 0) { this.guillermoMoreno1 += cuanto};break}
-                case 16: { if (this.chinoNavarro1 == 0) { this.chinoNavarro1 += cuanto};break}
-                case 17: { if (this.chivoRossi1 == 0) { this.chivoRossi1 += cuanto};break}
-                case 18: { if (this.cuervoLarroque1 == 0) { this.cuervoLarroque1 += cuanto};break}
+                case 11: {
+                    if (this.julioBarbaro1 == 0) {
+                        this.julioBarbaro1 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 12: {
+                    if (this.miguelAngelPichetto1 == 0) {
+                        this.miguelAngelPichetto1 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 13: {
+                    if (this.sergioMassa1 == 0) {
+                        this.sergioMassa1 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 14: {
+                    if (this.martinInsaurralde1 == 0) {
+                        this.martinInsaurralde1 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 15: {
+                    if (this.guillermoMoreno1 == 0) {
+                        this.guillermoMoreno1 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 16: {
+                    if (this.chinoNavarro1 == 0) {
+                        this.chinoNavarro1 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 17: {
+                    if (this.chivoRossi1 == 0) {
+                        this.chivoRossi1 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 18: {
+                    if (this.cuervoLarroque1 == 0) {
+                        this.cuervoLarroque1 += cuanto
+                    }
+                    ;
+                    break
+                }
 
-                case 21: { if (this.julioBarbaro2 == 0) { this.julioBarbaro2 += cuanto};break}
-                case 22: { if (this.miguelAngelPichetto2 == 0) { this.miguelAngelPichetto2 += cuanto}; break}
-                case 23: { if (this.sergioMassa2 == 0) { this.sergioMassa2 += cuanto};break}
-                case 24: { if (this.martinInsaurralde2 == 0) { this.martinInsaurralde2+= cuanto};break}
-                case 25: { if (this.guillermoMoreno2 == 0) {this.guillermoMoreno2 += cuanto};break}
-                case 26: { if (this.chinoNavarro2 == 0) {this.chinoNavarro2 += cuanto};break}
-                case 27: { if (this.chivoRossi2 == 0) {this.chivoRossi2 += cuanto};break}
-                case 28: { if (this.cuervoLarroque2 == 0) {this.cuervoLarroque2 += cuanto};break}
+                case 21: {
+                    if (this.julioBarbaro2 == 0) {
+                        this.julioBarbaro2 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 22: {
+                    if (this.miguelAngelPichetto2 == 0) {
+                        this.miguelAngelPichetto2 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 23: {
+                    if (this.sergioMassa2 == 0) {
+                        this.sergioMassa2 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 24: {
+                    if (this.martinInsaurralde2 == 0) {
+                        this.martinInsaurralde2 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 25: {
+                    if (this.guillermoMoreno2 == 0) {
+                        this.guillermoMoreno2 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 26: {
+                    if (this.chinoNavarro2 == 0) {
+                        this.chinoNavarro2 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 27: {
+                    if (this.chivoRossi2 == 0) {
+                        this.chivoRossi2 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 28: {
+                    if (this.cuervoLarroque2 == 0) {
+                        this.cuervoLarroque2 += cuanto
+                    }
+                    ;
+                    break
+                }
 
-                case 31: { if (this.julioBarbaro3 == 0) {this.julioBarbaro3 += cuanto};break}
-                case 32: { if (this.miguelAngelPichetto3 == 0) {this.miguelAngelPichetto3 += cuanto};break}
-                case 33: { if (this.sergioMassa3 == 0) {this.sergioMassa3 += cuanto};break}
-                case 34: { if (this.martinInsaurralde3 == 0) {this.martinInsaurralde3 += cuanto};break}
-                case 35: { if (this.guillermoMoreno3 == 0) {this.guillermoMoreno3 += cuanto};break}
-                case 36: { if (this.chinoNavarro3 == 0) {this.chinoNavarro3 += cuanto};break}
-                case 37: { if (this.chivoRossi3 == 0) {this.chivoRossi3 += cuanto};break}
-                case 38: { if (this.cuervoLarroque3 == 0) {this.cuervoLarroque3 += cuanto};break}
+                case 31: {
+                    if (this.julioBarbaro3 == 0) {
+                        this.julioBarbaro3 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 32: {
+                    if (this.miguelAngelPichetto3 == 0) {
+                        this.miguelAngelPichetto3 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 33: {
+                    if (this.sergioMassa3 == 0) {
+                        this.sergioMassa3 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 34: {
+                    if (this.martinInsaurralde3 == 0) {
+                        this.martinInsaurralde3 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 35: {
+                    if (this.guillermoMoreno3 == 0) {
+                        this.guillermoMoreno3 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 36: {
+                    if (this.chinoNavarro3 == 0) {
+                        this.chinoNavarro3 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 37: {
+                    if (this.chivoRossi3 == 0) {
+                        this.chivoRossi3 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 38: {
+                    if (this.cuervoLarroque3 == 0) {
+                        this.cuervoLarroque3 += cuanto
+                    }
+                    ;
+                    break
+                }
 
-                case 41: { if (this.julioBarbaro4 == 0) {this.julioBarbaro4 += cuanto};break}
-                case 42: { if (this.miguelAngelPichetto4 == 0) {this.miguelAngelPichetto4 += cuanto};break}
-                case 43: { if (this.sergioMassa4 == 0) {this.sergioMassa4 += cuanto};break}
-                case 44: { if (this.martinInsaurralde4 == 0) {this.martinInsaurralde4 += cuanto};break}
-                case 45: { if (this.guillermoMoreno4 == 0) {this.guillermoMoreno4 += cuanto};break}
-                case 46: { if (this.chinoNavarro4 == 0) {this.chinoNavarro4 += cuanto};break}
-                case 47: { if (this.chivoRossi4 == 0) {this.chivoRossi4 += cuanto};break}
-                case 48: { if (this.cuervoLarroque4 == 0) { this.cuervoLarroque4 += cuanto};break}
+                case 41: {
+                    if (this.julioBarbaro4 == 0) {
+                        this.julioBarbaro4 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 42: {
+                    if (this.miguelAngelPichetto4 == 0) {
+                        this.miguelAngelPichetto4 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 43: {
+                    if (this.sergioMassa4 == 0) {
+                        this.sergioMassa4 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 44: {
+                    if (this.martinInsaurralde4 == 0) {
+                        this.martinInsaurralde4 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 45: {
+                    if (this.guillermoMoreno4 == 0) {
+                        this.guillermoMoreno4 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 46: {
+                    if (this.chinoNavarro4 == 0) {
+                        this.chinoNavarro4 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 47: {
+                    if (this.chivoRossi4 == 0) {
+                        this.chivoRossi4 += cuanto
+                    }
+                    ;
+                    break
+                }
+                case 48: {
+                    if (this.cuervoLarroque4 == 0) {
+                        this.cuervoLarroque4 += cuanto
+                    }
+                    ;
+                    break
+                }
 
             }
 
@@ -174,41 +362,233 @@ var app = new Vue({
 
         restar: function (event, quien, cuanto) {
             switch (quien) {
-                case 11: { if (this.julioBarbaro1 == 0) { this.julioBarbaro1 -= cuanto };break}
-                case 12: { if (this.miguelAngelPichetto1 == 0) {this.miguelAngelPichetto1 -= cuanto};break}
-                case 13: { if (this.sergioMassa1 == 0) { this.sergioMassa1 -= cuanto};break}
-                case 14: { if (this.martinInsaurralde1 == 0) { this.martinInsaurralde1 -= cuanto};break}
-                case 15: { if (this.guillermoMoreno1 == 0) { this.guillermoMoreno1 -= cuanto};break}
-                case 16: { if (this.chinoNavarro1 == 0) { this.chinoNavarro1 -= cuanto};break}
-                case 17: { if (this.chivoRossi1 == 0) { this.chivoRossi1 -= cuanto};break}
-                case 18: { if (this.cuervoLarroque1 == 0) { this.cuervoLarroque1 -= cuanto};break}
+                case 11: {
+                    if (this.julioBarbaro1 == 0) {
+                        this.julioBarbaro1 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 12: {
+                    if (this.miguelAngelPichetto1 == 0) {
+                        this.miguelAngelPichetto1 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 13: {
+                    if (this.sergioMassa1 == 0) {
+                        this.sergioMassa1 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 14: {
+                    if (this.martinInsaurralde1 == 0) {
+                        this.martinInsaurralde1 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 15: {
+                    if (this.guillermoMoreno1 == 0) {
+                        this.guillermoMoreno1 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 16: {
+                    if (this.chinoNavarro1 == 0) {
+                        this.chinoNavarro1 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 17: {
+                    if (this.chivoRossi1 == 0) {
+                        this.chivoRossi1 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 18: {
+                    if (this.cuervoLarroque1 == 0) {
+                        this.cuervoLarroque1 -= cuanto
+                    }
+                    ;
+                    break
+                }
 
-                case 21: { if (this.julioBarbaro2 == 0) { this.julioBarbaro2 -= cuanto};break}
-                case 22: { if (this.miguelAngelPichetto2 == 0) { this.miguelAngelPichetto2 -= cuanto}; break}
-                case 23: { if (this.sergioMassa2 == 0) { this.sergioMassa2 -= cuanto};break}
-                case 24: { if (this.martinInsaurralde2 == 0) {this.martinInsaurralde2 -= cuanto};break}
-                case 25: { if (this.guillermoMoreno2 == 0) {this.guillermoMoreno2 -= cuanto};break}
-                case 26: { if (this.chinoNavarro2 == 0) {this.chinoNavarro2 -= cuanto};break}
-                case 27: { if (this.chivoRossi2 == 0) {this.chivoRossi2 -= cuanto};break}
-                case 28: { if (this.cuervoLarroque2 == 0) {this.cuervoLarroque2 -= cuanto};break}
+                case 21: {
+                    if (this.julioBarbaro2 == 0) {
+                        this.julioBarbaro2 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 22: {
+                    if (this.miguelAngelPichetto2 == 0) {
+                        this.miguelAngelPichetto2 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 23: {
+                    if (this.sergioMassa2 == 0) {
+                        this.sergioMassa2 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 24: {
+                    if (this.martinInsaurralde2 == 0) {
+                        this.martinInsaurralde2 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 25: {
+                    if (this.guillermoMoreno2 == 0) {
+                        this.guillermoMoreno2 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 26: {
+                    if (this.chinoNavarro2 == 0) {
+                        this.chinoNavarro2 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 27: {
+                    if (this.chivoRossi2 == 0) {
+                        this.chivoRossi2 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 28: {
+                    if (this.cuervoLarroque2 == 0) {
+                        this.cuervoLarroque2 -= cuanto
+                    }
+                    ;
+                    break
+                }
 
-                case 31: { if (this.julioBarbaro3 == 0) {this.julioBarbaro3 -= cuanto};break}
-                case 32: { if (this.miguelAngelPichetto3 == 0) {this.miguelAngelPichetto3 -= cuanto};break}
-                case 33: { if (this.sergioMassa3 == 0) {this.sergioMassa3 -= cuanto};break}
-                case 34: { if (this.martinInsaurralde4 == 0) {this.martinInsaurralde4 -= cuanto};break}
-                case 35: { if (this.guillermoMoreno3 == 0) {this.guillermoMoreno3 -= cuanto};break}
-                case 36: { if (this.chinoNavarro3 == 0) {this.chinoNavarro3 -= cuanto};break}
-                case 37: { if (this.chivoRossi3 == 0) {this.chivoRossi3 -= cuanto};break}
-                case 38: { if (this.cuervoLarroque3 == 0) {this.cuervoLarroque3 -= cuanto};break}
+                case 31: {
+                    if (this.julioBarbaro3 == 0) {
+                        this.julioBarbaro3 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 32: {
+                    if (this.miguelAngelPichetto3 == 0) {
+                        this.miguelAngelPichetto3 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 33: {
+                    if (this.sergioMassa3 == 0) {
+                        this.sergioMassa3 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 34: {
+                    if (this.martinInsaurralde4 == 0) {
+                        this.martinInsaurralde4 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 35: {
+                    if (this.guillermoMoreno3 == 0) {
+                        this.guillermoMoreno3 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 36: {
+                    if (this.chinoNavarro3 == 0) {
+                        this.chinoNavarro3 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 37: {
+                    if (this.chivoRossi3 == 0) {
+                        this.chivoRossi3 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 38: {
+                    if (this.cuervoLarroque3 == 0) {
+                        this.cuervoLarroque3 -= cuanto
+                    }
+                    ;
+                    break
+                }
 
-                case 41: { if (this.julioBarbaro4 == 0) {this.julioBarbaro4 -= cuanto};break}
-                case 42: { if (this.miguelAngelPichetto4 == 0) {this.miguelAngelPichetto4 -= cuanto};break}
-                case 43: { if (this.sergioMassa4 == 0) {this.sergioMassa4 -= cuanto};break}
-                case 44: { if (this.martinInsaurralde4 == 0) {this.martinInsaurralde4 -= cuanto};break}
-                case 45: { if (this.guillermoMoreno4 == 0) {this.guillermoMoreno4 -= cuanto};break}
-                case 46: { if (this.chinoNavarro4 == 0) {this.chinoNavarro4 -= cuanto};break}
-                case 47: { if (this.chivoRossi4 == 0) {this.chivoRossi4 -= cuanto};break}
-                case 48: { if (this.cuervoLarroque4 == 0) { this.cuervoLarroque4 -= cuanto};break}
+                case 41: {
+                    if (this.julioBarbaro4 == 0) {
+                        this.julioBarbaro4 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 42: {
+                    if (this.miguelAngelPichetto4 == 0) {
+                        this.miguelAngelPichetto4 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 43: {
+                    if (this.sergioMassa4 == 0) {
+                        this.sergioMassa4 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 44: {
+                    if (this.martinInsaurralde4 == 0) {
+                        this.martinInsaurralde4 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 45: {
+                    if (this.guillermoMoreno4 == 0) {
+                        this.guillermoMoreno4 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 46: {
+                    if (this.chinoNavarro4 == 0) {
+                        this.chinoNavarro4 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 47: {
+                    if (this.chivoRossi4 == 0) {
+                        this.chivoRossi4 -= cuanto
+                    }
+                    ;
+                    break
+                }
+                case 48: {
+                    if (this.cuervoLarroque4 == 0) {
+                        this.cuervoLarroque4 -= cuanto
+                    }
+                    ;
+                    break
+                }
             }
 
             var get2 = event.currentTarget;
@@ -237,15 +617,16 @@ var app = new Vue({
 
         getPage2: function () {
 
-           damePagina2();
-           function damePagina2() {
+            damePagina2();
+            function damePagina2() {
 
-               app.page2=true;
+                app.page2 = true;
 
 
             }
+
             this.page1 = false;
-            setTimeout(window.scrollTo(0, 1000),100);
+            setTimeout(window.scrollTo(0, 1000), 100);
         },
 
 
@@ -254,12 +635,13 @@ var app = new Vue({
 
             function damePagina3() {
 
-                app.page3=true;
+                app.page3 = true;
 
 
             }
+
             this.page2 = false;
-            setTimeout(window.scrollTo(0, 1000),100);
+            setTimeout(window.scrollTo(0, 1000), 100);
         },
 
 
@@ -268,12 +650,13 @@ var app = new Vue({
             damePagina4();
             function damePagina4() {
 
-                app.page4=true;
+                app.page4 = true;
 
 
             }
+
             this.page3 = false;
-            setTimeout(window.scrollTo(0, 1000),100);
+            setTimeout(window.scrollTo(0, 1000), 100);
         },
 
         removeHelp: function () {
@@ -354,7 +737,7 @@ var app = new Vue({
         },
 //Calculo final
         final: function () {
-           this.intro=true;
+            this.intro = true;
 
             julioBarbaro = this.julioBarbaro1 + this.julioBarbaro2 + this.julioBarbaro3 + this.julioBarbaro4
             this.totales.push(julioBarbaro);
@@ -381,11 +764,10 @@ var app = new Vue({
             this.totales.push(cuervoLarroque);
 
 
-
 //Cerrar quiz div y sacar intro
 
-            this.page4=false;
-            this.intro=false;
+            this.page4 = false;
+            this.intro = false;
 //Calcular primero y segundo
 
             function findIndicesOfMax(inp, count) {
@@ -408,14 +790,24 @@ var app = new Vue({
             this.primero = indices[0];
             this.segundo = indices[1];
 
-  //Diferencia entre primero y segundo
+            //Diferencia entre primero y segundo
 
-    /*Si Son iguales*/
-            if(this.totales[indices[0]] === this.totales[indices[1]]){this.diferencia=0}
-    /*Si hay uno o dos de diferencia*/
-            else if(this.totales[indices[0]] - this.totales[indices[1]]<= 2){this.diferencia=1}
-    /*Si hay dos o mas de diferencia*/
-            else if(this.totales[indices[0]] - this.totales[indices[1]] > 2){this.diferencia=2}
+            /*Si Son iguales*/
+            if (this.totales[indices[0]] === this.totales[indices[1]]) {
+                this.diferencia = 0
+            }
+            /*Si hay uno de diferencia*/
+            else if (this.totales[indices[0]] - this.totales[indices[1]] == 1) {
+                this.diferencia = 1
+            }
+            /*Si hay dos de diferencia*/
+            else if (this.totales[indices[0]] - this.totales[indices[1]] == 2) {
+                this.diferencia = 2
+            }
+            /*Si hay tres o mas de diferencia*/
+            else if (this.totales[indices[0]] - this.totales[indices[1]] > 2) {
+                this.diferencia = 3
+            }
 
 //Calcular el ultimo
             function indexOfMin(arr) {
@@ -438,8 +830,8 @@ var app = new Vue({
 
             this.ultimo = indexOfMin(this.totales);
         },
- //Reemplazar numero de posicion con el de dirigente
-        replaceNames:function () {
+        //Reemplazar numero de posicion con el de dirigente
+        replaceNames: function () {
 
 
             switch (app.primero) {
@@ -548,15 +940,57 @@ var app = new Vue({
             }
         },
 
-        cerrarModal : function (event) {
-               var button = event.currentTarget;
-               var parent= button.parentNode.parentNode.parentNode;
-               parent.classList.remove('is-active')
+        cerrarModal: function (event) {
+            var button = event.currentTarget;
+            var parent = button.parentNode.parentNode.parentNode;
+            parent.classList.remove('is-active')
 
 
+        },
+        cerrarModal2: function (event) {
+            var button = event.currentTarget;
+            var parent = button.parentNode.parentNode.parentNode.parentNode;
+
+            parent.classList.remove('is-active')
+
+
+        },
+        shareButtons: function () {
+
+
+            this.runtimeEnd = true;
+
+
+        },
+
+        twitter: function (e) {
+
+
+            var twitterShare = e.currentTarget;
+
+            var resultadoShare = document.getElementById('resultadoStmt').textContent;
+
+            var twitterWindow = window.open('https://twitter.com/intent/tweet?text=' + 'Hice el test de Coyuntura política peronista y me salió : "' + resultadoShare + '". Podés hacerlo en http://bit.do/testperonista', 'twitter-popup', 'height=350,width=600');
+            if (twitterWindow.focus) {
+                twitterWindow.focus();
             }
+            return false;
+        },
 
-    },
+        facebook: function (e) {
+
+            var facebookShare = e.currentTarget;
+            var resultadoShare2 = document.getElementById('resultadoStmt').textContent;
+
+            FB.ui({
+                method: 'share',
+                href: 'https://bit.do/testperonista',
+                quote: 'Hice el Test de coyuntura peronista y me salió: "' + resultadoShare2 + '"',
+            }, function(response){});
+
+
+            },
+        }
 
 });
 
