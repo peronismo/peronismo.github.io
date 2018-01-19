@@ -11,19 +11,28 @@
 
 
     background-position: center;
-      background-repeat: repeat;
+    background-repeat: repeat;
   }
+
+
+    #abajo a{
+
+        color: #ffdd57;
+
+    }
+
+    #abajo{
+
+        text-align: center !important;
+    }
 
     #intro{
 
         background-image: url("../img/hero1.jpg");
         background-size: cover;
     }
-    #help{
 
-        background-color: rgba(255,255,255, 0.8);
 
-    }
 
     .columns{
         border: solid 3px black;
@@ -33,13 +42,6 @@
         color: black;
         margin-left: -5px;
         margin-right: -5px;
-    }
-
-    #contenidoAyuda{
-
-            background-color: rgba(255,255,255, 0.8);
-
-
     }
 
 
@@ -84,6 +86,13 @@
         transform-origin :100% 100%;
     }
 
+
+
+    #ayuda .message{
+
+        background-color: rgba(255,255,255,0.8);
+        font-family: Asap;
+    }
 
     /* Heart beat animation */
     @keyframes beat{
@@ -190,6 +199,7 @@
 
 }
 
+/************************************************DESKTOP******************************************/
 
 @media only screen and (min-width:768px) {
     html {
@@ -197,6 +207,24 @@
         background-color: #209cee;
     }
 
+    body {
+        background: url("../img/Peron-y-Evita-HD-2.jpg");
+        background-size: cover !important;
+        background-attachment: fixed;
+    }
+
+    #abajo a{
+
+        color: #209cee;
+        margin-right: 50px;
+
+    }
+
+    #abajo a:hover{
+
+        color: #ffdd57;
+
+    }
  #intro{
 
      background-image: url("../img/hero1.jpg");
@@ -233,7 +261,7 @@
 
     .escudo {
 
-        color: #e00;
+
         -webkit-transition:all 3s ease;
         margin-top: 70px;
         -webkit-animation: latidos 3s infinite;
@@ -304,11 +332,9 @@
         max-width: 50%;
     }
 
-    body {
-        background: url("../img/Peron-y-Evita-HD-2.jpg");
-        background-size: cover !important;
-        background-attachment: fixed;
-    }
+
+
+
 
     .button {
 
@@ -333,7 +359,7 @@
         border: solid 4px black;
         border-radius: 10px;
         margin-top: 50px;
-        background-color: rgba(255,255,255, 0.8);
+        background-color: rgba(255, 255, 255, 0.8);
         color: black;
         text-align: center;
     }
@@ -366,6 +392,7 @@
 
         color: whitesmoke;
         font-weight: bold;
+        font-family: Montserrat;
     }
     #cuerpoModal1 > img, #cuerpoModal2 > img, #cuerpoModal3 > img, #cuerpoModal4 > img, #cuerpoModal5 > img, #cuerpoModal6 > img, #cuerpoModal7 > img, #cuerpoModa8 > img  {
 
@@ -377,6 +404,7 @@
     #cuerpoModal1 > p, #cuerpoModal2 > p, #cuerpoModal3 > p, #cuerpoModal4 > p, #cuerpoModal5 > p, #cuerpoModal6 > p, #cuerpoModal7 > p, #cuerpoModal8 > p{
 
         color: black;
+        font-family: Montserrat;
 
 
     }
