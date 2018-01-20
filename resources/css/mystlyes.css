@@ -194,7 +194,11 @@
         padding: 10px 1px 5px 1px;
     }
 
+    #contenedorMusica{
 
+        font-weight: bolder;
+        font-family: Montserrat;
+    }
 
 
 }
@@ -416,6 +420,13 @@
         border-radius: 5px;
         padding: 10px 5px;
     }
+    #contenedorMusica{
+
+
+        font-family: Montserrat;
+    }
+
+
 }
 
 
