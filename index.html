@@ -1,21 +1,19 @@
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="UTF-8">
     <meta name="viewport" content='width=device-width, initial-scale=1'>
     <meta property="og:title" content="Test de Coyuntura Peronista">
     <meta property="og:description" content="¿Qué linea peronista te identifica?">
     <meta property="og:image" content="thumbnail_image">
     <meta name="description" content="Test de coyuntura peronista: ¿Qué línea te identifica?">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     <link rel="stylesheet" href="resources/css/mystlyes.css">
-    <link href="https://fonts.googleapis.com/css?family=Asap:700|Montserrat" rel="stylesheet">
 
-    <link rel="alternate" type="application/json+oembed"
-          href="https://codepen.io/api/oembed?url=https://codepen.io/Huskie/pen/wKphk&format=json"
-          title="Test de Coyuntura peronista" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Asap:700|Montserrat" rel="stylesheet">
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Test peronista</title>
 
     <style>
@@ -42,7 +40,7 @@
 </head>
 
 <body>
-<div id="app">
+<div id="app" v-cloak="">
 <section id="res" v-if="primero" class="hero is-fullheight">
     <div class="hero-body">
         <article id="resultadoCuadro" class="message is-info">
@@ -61,14 +59,9 @@
          <button id="fb" class="button is-large is-link facebook-share" data-js="facebook-share" @click="facebook($event)"> <i class="fa fa-facebook"></i> &nbsp;Compartir en Facebook</button></div>
 
 </section>
-     <section id="resultado" class="container has-text-centered">
+  <section id="resultado" class="container has-text-centered">
 
-
-
-
-
-
-        <template v-if="primero=='Julio Bárbaro'">
+     <template v-if="primero=='Julio Bárbaro'">
 
             <div class="modal is-active" id="modal1">
                 <div class="modal-background"></div>
@@ -413,12 +406,12 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
     <transition name="slide-fade">
    <section id="1" class="hero is-fullheight is-info" v-show="page1" >
-
+       <div class="hero-body">
         <div class="container">
 
 
 
-                <div id="pregunta1" class="hero-body">
+                <div id="pregunta1">
                     <section id="q1">
 
                        <h3 class="title is-1 is-size-3-touch has-text-centered"> ¿Qué estrategia debe desplegar el peronismo como opositor? ¿Qué tipo de relación debe tener con el oficialismo?</h3>
@@ -542,7 +535,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
                     </div>
 
-
+            </div>
         </div>
     </section>
     </transition>
@@ -552,12 +545,12 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
     <transition name="slide-fade">
         <section id="2" class="hero is-fullheight is-info" v-show="page2" >
+            <div class="hero-body">
+             <div class="container">
 
-            <div class="container">
 
 
-
-                    <div id="pregunta2" class="hero-body">
+                    <div id="pregunta2">
                         <section id="q2">
 
                         <h3 class="title is-1 is-size-3-touch has-text-centered"> ¿Qué balance hacés sobre las presidencias de Cristina? ¿Qué opinión te merece como dirigente?</h3>
@@ -687,8 +680,8 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
                     </div>
 
-
             </div>
+           </div>
         </section>
     </transition>
 
@@ -697,11 +690,12 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
     <transition name="slide-fade">
         <section id="3" class="hero is-fullheight is-info" v-show="page3" >
+            <div class="hero-body">
 
             <div class="container">
 
 
-                    <div id="pregunta3" class="hero-body">
+                    <div id="pregunta3">
                         <section id="q3">
                             <h3 class="title is-1 is-size-3-touch has-text-centered"> ¿Qué rol debe tener Cristina hacia 2019?</h3>
 
@@ -826,7 +820,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
                     </div>
 
-
+              </div>
             </div>
         </section>
     </transition>
@@ -834,11 +828,11 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
     <!----------Pregunta 4---------->
  <transition name="slide-fade">
      <section id="4" class="hero is-fullheight is-info" v-show="page4" >
-
+         <div class="hero-body">
             <div class="container">
 
 
-                    <div id="pregunta4" class="hero-body">
+                    <div id="pregunta4">
 
                         <section id="q4">
                             <h3 class="title is-1 is-size-3-touch has-text-centered">Muchos acompañaron iniciativas del gobierno, como el pago a los Fondos Buitre según lo demandado por el juez Griesa o la reforma jubiltoria. ¿Qué opina de esos compañeros? ¿Se puede o se debe armar un frente que incluya a todos los sectores del peronismo, sean o no kirchneristas? ¿Cuál es el límite?</h3>
@@ -966,7 +960,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                             <div id="contenedorMusica" class="is-fluid has-text-centered is-size-4-desktop is-size-5-mobile"><input type="checkbox" checked id="musica" v-model="musica" style="width: 15px;height: 15px"><label for="musica">&nbsp;Acompañar el resultado con música alusiva</label></div>
                         </section>
                     </div>
-
+            </div>
 
             </div>
         </section>
