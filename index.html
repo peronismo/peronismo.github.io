@@ -1,5 +1,4 @@
 <html>
-<head>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="UTF-8">
     <meta name="viewport" content='width=device-width, initial-scale=1'>
@@ -37,10 +36,12 @@
 
 
     </style>
-</head>
+</html>
 
-<body>
-<div id="app" v-cloak="">
+
+<div id="app">
+
+
 <section id="res" v-if="primero" class="hero is-fullheight">
     <div class="hero-body">
         <article id="resultadoCuadro" class="message is-info">
@@ -402,7 +403,6 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
 
 
-
     <!----------Pregunta 1---------->
 
     <transition name="slide-fade">
@@ -420,14 +420,14 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
 
                 <div class="columns">
                     <div class="column is-6" style="margin: auto 0">
-                        <p id="a2" class="is-size-3-desktop is-size-4-mobile has-text-centered">Debe ser racional y propositivo. El pueblo no quiere políticos que se opongan por oponerse.</p>
-                    </div>
+                        <p id="a2" class="is-size-3-desktop is-size-4-mobile has-text-centered">Debe ser racional y propositivo. El pueblo no quiere políticos que se opongan por oponerse.</p></div>
                         <div class="column is-6 buttons has-addons is-centered is-large" style="margin: auto">
                             <div class="column is-6" style="margin: auto">
                             <span class="button" @click=sumar($event,12,3)>Muy de acuerdo</span>
                             <span class="button" @click=sumar($event,12,1)>De acuerdo</span>
                             <span class="button" @click=restar($event,12,1)>Desacuerdo</span>
                             <span class="button" @click=restar($event,12,3)>Muy en desacuerdo</span>
+                            <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                             </div>
                         </div>
                 </div>
@@ -441,6 +441,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                             <span class="button" @click=sumar($event,18,1)>De acuerdo</span>
                             <span class="button" @click=restar($event,18,1)>Desacuerdo</span>
                             <span class="button" @click=restar($event,18,3)>Muy en desacuerdo</span>
+                            <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                             </div>
                         </div>
                 </div>
@@ -453,6 +454,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                     <span class="button" @click=sumar($event,14,1)>De acuerdo</span>
                                     <span class="button" @click=restar($event,14,1)>Desacuerdo</span>
                                     <span class="button" @click=restar($event,14,3)>Muy en desacuerdo</span>
+                                    <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                 </div>
                             </div>
                         </div>
@@ -466,7 +468,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                             <span class="button" @click=sumar($event,13,1)>De acuerdo</span>
                             <span class="button" @click=restar($event,13,1)>Desacuerdo</span>
                             <span class="button" @click=restar($event,13,3)>Muy en desacuerdo</span>
-                            </div>
+                            <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>                            </div>
                         </div>
                 </div>
 
@@ -479,6 +481,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                             <span class="button" @click=sumar($event,15,1)>De acuerdo</span>
                             <span class="button" @click=restar($event,15,1)>Desacuerdo</span>
                             <span class="button" @click=restar($event,15,3)>Muy en desacuerdo</span>
+                            <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                             </div>
                         </div>
                 </div>
@@ -493,6 +496,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                             <span class="button" @click=sumar($event,16,1)>De acuerdo</span>
                             <span class="button" @click=restar($event,16,1)>Desacuerdo</span>
                             <span class="button" @click=restar($event,16,3)>Muy en desacuerdo</span>
+                            <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                         </div>
                      </div>
                 </div>
@@ -507,6 +511,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                             <span class="button" @click=sumar($event,17,1)>De acuerdo</span>
                             <span class="button" @click=restar($event,17,1)>Desacuerdo</span>
                             <span class="button" @click=restar($event,17,3)>Muy en desacuerdo</span>
+                            <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                         </div>
                     </div>
                 </div>
@@ -521,7 +526,9 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                     <span class="button" @click=sumar($event,11,1)>De acuerdo</span>
                                     <span class="button" @click=restar($event,11,1)>Desacuerdo</span>
                                     <span class="button" @click=restar($event,11,3)>Muy en desacuerdo</span>
+                                    <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                 </div>
+                                <div class="pasoAtras" style="cursor: pointer;display: none"><i class="fa fa-undo" style="display: inline-block;margin: auto; vertical-align: middle;color: #209cee"></i> <span class="is-size-7" style="display: inline-block"> Deshacer</span></div>
                             </div>
                         </div>
 
@@ -566,6 +573,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,27,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,27,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,27,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -580,6 +588,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,25,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,25,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,25,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -594,6 +603,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,26,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,26,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,26,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -608,6 +618,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,23,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,23,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,23,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -622,6 +633,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,22,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,22,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,22,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -636,6 +648,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,28,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,28,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,28,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -650,6 +663,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,21,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,21,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,21,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -664,6 +678,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,24,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,24,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,24,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -710,6 +725,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,35,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,35,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,35,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -724,6 +740,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                     <span class="button" @click=sumar($event,31,1)>De acuerdo</span>
                                     <span class="button" @click=restar($event,31,1)>Desacuerdo</span>
                                     <span class="button" @click=restar($event,31,3)>Muy en desacuerdo</span>
+                                    <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                 </div>
                             </div>
                         </div>
@@ -737,6 +754,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,34,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,34,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,34,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -750,6 +768,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,32,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,32,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,32,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -764,6 +783,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,36,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,36,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,36,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -778,6 +798,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,33,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,33,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,33,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -792,6 +813,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,37,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,37,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,37,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -806,6 +828,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,38,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,38,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,38,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -850,6 +873,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,45,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,45,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,45,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -864,6 +888,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,41,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,41,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,41,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -878,6 +903,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                          <span class="button" @click=sumar($event,42,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,42,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,42,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -893,6 +919,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,47,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,47,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,47,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -908,6 +935,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,46,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,46,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,46,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -921,6 +949,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,44,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,44,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,44,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -934,6 +963,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,43,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,43,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,43,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>
@@ -948,6 +978,7 @@ Estás convencido de que el PJ, el Frente Renovador, Cumplir y Unidad Ciudadana 
                                         <span class="button" @click=sumar($event,48,1)>De acuerdo</span>
                                         <span class="button" @click=restar($event,48,1)>Desacuerdo</span>
                                         <span class="button" @click=restar($event,48,3)>Muy en desacuerdo</span>
+                                        <div class="pasoAtras has-text-centered" @click="reverse($event)"><img src="resources/img/undo.png" style="width: 25px;margin: 0 0" alt="Deshacer selección"></div>
                                     </div>
                                 </div>
                             </div>

@@ -3,27 +3,27 @@ var resultadoTemplate = {
     template:'<div id="resultadoStmt" style="display: block"><p class="title is-2" style="color: black"> Sos peronista línea {{recibeprimero}}. Además, podemos decirte que estás {{diferenciaAplicada}} {{recibesegundo}}. Por otro lado, estás bien lejitos del compañero {{recibeultimo}}. </p></div>',
     props:['recibeprimero', 'recibesegundo', 'recibeultimo','recibediferencia'],
     computed: {
-          diferenciaAplicada: function () {
-              if (this.recibediferencia===0){
+        diferenciaAplicada: function () {
+            if (this.recibediferencia===0){
                 return this.diferencia='prácticamente en la misma sintonía que';
-          }
-              else if(this.recibediferencia===1){
+            }
+            else if(this.recibediferencia===1){
                 return this.diferencia='muy cerca de la línea de'
 
-          }
+            }
 
             else if(this.recibediferencia===2){
-              return this.diferencia='bastante cerca de la línea de'
-          }
+                return this.diferencia='bastante cerca de la línea de'
+            }
 
-              else if(this.recibediferencia===3){
-                  return this.diferencia='cerca de la línea de'
-          }
+            else if(this.recibediferencia===3){
+                return this.diferencia='cerca de la línea de'
+            }
 
-           if (this.recibeprimero=='Fernando Chino Navarro'){this.recibeprimero='Fernando "Chino" Navarro'}
-           else  if (this.recibeprimero=='Agustín Chivo Rossi'){this.recibeprimero='Agustín "Chivo" Rossi'}
-           else  if (this.recibeprimero=='Andrés Cuervo Larroque'){this.recibeprimero='Andrés "Cuervo" Larroque'};
-          },
+            if (this.recibeprimero=='Fernando Chino Navarro'){this.recibeprimero='Fernando "Chino" Navarro'}
+            else  if (this.recibeprimero=='Agustín Chivo Rossi'){this.recibeprimero='Agustín "Chivo" Rossi'}
+            else  if (this.recibeprimero=='Andrés Cuervo Larroque'){this.recibeprimero='Andrés "Cuervo" Larroque'};
+        },
 
     },
 
@@ -353,9 +353,15 @@ var app = new Vue({
             function getPrevSibling(get) {
                 while (get = get.previousElementSibling) {
                     get.style.display = 'none'
-                }
-                ;
+                }                ;
             }
+
+            //Aparecer deshacer cuando se selecciono un boton
+
+            var nodes = event.currentTarget.parentNode.childNodes;
+
+           nodes[8].style.display='block';
+           nodes[8].style.margin='0 auto';
 
 
         },
@@ -610,7 +616,78 @@ var app = new Vue({
                 }
                 ;
             }
+            //Aparecer deshacer cuando se selecciono un boton
 
+            var nodes = event.currentTarget.parentNode.childNodes;
+
+            nodes[8].style.display='block';
+            nodes[8].style.margin='0 auto';
+
+        },
+        reverse: function (event) {
+            var target = event.currentTarget;
+            var node = target.parentNode.parentNode.parentNode;
+            var identifier = node.getElementsByTagName('p')[0];
+            var comparar = identifier.attributes[0].value;
+
+
+            switch (comparar){
+                case 'a1': this.julioBarbaro1=0;break;
+                case "a2": this.miguelAngelPichetto1=0;break;
+                case 'a3': this.sergioMassa1=0;break;;
+                case 'a4': this.martinInsaurralde1=0;break;
+                case 'a5': this.guillermoMoreno1=0;break;
+                case 'a6': this.chinoNavarro1=0;break;
+                case 'a7': this.chivoRossi1=0;break;
+                case 'a8': this.cuervoLarroque1=0;break;
+
+                case 'b1': this.julioBarbaro2=0;break;
+                case "b2": this.miguelAngelPichetto2=0;break;
+                case 'b3': this.sergioMassa2=0;break;;
+                case 'b4': this.martinInsaurralde2=0;break;
+                case 'b5': this.guillermoMoreno2=0;break;
+                case 'b6': this.chinoNavarro2=0;break;
+                case 'b7': this.chivoRossi2=0;break;
+                case 'b8': this.cuervoLarroque2=0;break;
+
+                case 'c1': this.julioBarbaro3=0;break;
+                case "c2": this.miguelAngelPichetto3=0;break;
+                case 'c3': this.sergioMassa3=0;break;;
+                case 'c4': this.martinInsaurralde3=0;break;
+                case 'c5': this.guillermoMoreno3=0;break;
+                case 'c6': this.chinoNavarro3=0;break;
+                case 'c7': this.chivoRossi3=0;break;
+                case 'c8': this.cuervoLarroque3=0;break;
+
+                case 'd1': this.julioBarbaro4=0;break;
+                case "d2": this.miguelAngelPichetto4=0;break;
+                case 'd3': this.sergioMassa4=0;break;;
+                case 'd4': this.martinInsaurralde4=0;break;
+                case 'd5': this.guillermoMoreno4=0;break;
+                case 'd6': this.chinoNavarro4=0;break;
+                case 'd7': this.chivoRossi4=0;break;
+                case 'd8': this.cuervoLarroque4=0;break;
+            }
+            //Esconder el boton de re-hacer
+            target.style.display='none';
+            //Coleccion de botonones escondidos re-aparecen
+
+            var buttonsInvisible = node.getElementsByClassName('button');
+            for (var i = 0; i < buttonsInvisible.length; i++) {
+                buttonsInvisible[i].style.display = "block";
+            }
+
+//Coleccion de bottones "de acuerdo" y devueltos a clase de "no seleccionados"
+            var buttonsGreen = node.getElementsByClassName('button is-success is-selected');
+            while (buttonsGreen.length > 0) {
+                buttonsGreen[0].className = 'button';
+//Coleccion de bottones "de acuerdo" y devueltos a clase de "no seleccionados"
+
+            }
+            var buttonsRed = node.getElementsByClassName('button is-danger is-selected');
+            while (buttonsRed.length > 0) {
+                buttonsRed[0].className = 'button';
+            }
 
         },
 
@@ -973,27 +1050,27 @@ var app = new Vue({
 
         twitter: function (e) {
 
-      /*      function getCleanedString(cadena){
+            /*      function getCleanedString(cadena){
 
 
 
 
-                // Eliminar acentos.
-                cadena = cadena.replace(/á/gi,"a");
-                cadena = cadena.replace(/Á/gi,"A");
-                cadena = cadena.replace(/é/gi,"e");
-                cadena = cadena.replace(/É/gi,"E");
-                cadena = cadena.replace(/í/gi,"i");
-                cadena = cadena.replace(/í/gi,"I");
-                cadena = cadena.replace(/ó/gi,"o");
-                cadena = cadena.replace(/Ó/gi,"O");
-                cadena = cadena.replace(/ú/gi,"u");
-                cadena = cadena.replace(/Ú/gi,"U");
+             // Eliminar acentos.
+             cadena = cadena.replace(/á/gi,"a");
+             cadena = cadena.replace(/Á/gi,"A");
+             cadena = cadena.replace(/é/gi,"e");
+             cadena = cadena.replace(/É/gi,"E");
+             cadena = cadena.replace(/í/gi,"i");
+             cadena = cadena.replace(/í/gi,"I");
+             cadena = cadena.replace(/ó/gi,"o");
+             cadena = cadena.replace(/Ó/gi,"O");
+             cadena = cadena.replace(/ú/gi,"u");
+             cadena = cadena.replace(/Ú/gi,"U");
 
-                return cadena;
+             return cadena;
 
-            };
-*/
+             };
+             */
 
 
             var twitterShare = e.currentTarget;
@@ -1029,8 +1106,7 @@ var app = new Vue({
             }, function(response){});
 
 
-            },
-        }
+        },
+    }
 
 });
-
