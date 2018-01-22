@@ -973,17 +973,49 @@ var app = new Vue({
 
         twitter: function (e) {
 
+      /*      function getCleanedString(cadena){
+
+
+
+
+                // Eliminar acentos.
+                cadena = cadena.replace(/á/gi,"a");
+                cadena = cadena.replace(/Á/gi,"A");
+                cadena = cadena.replace(/é/gi,"e");
+                cadena = cadena.replace(/É/gi,"E");
+                cadena = cadena.replace(/í/gi,"i");
+                cadena = cadena.replace(/í/gi,"I");
+                cadena = cadena.replace(/ó/gi,"o");
+                cadena = cadena.replace(/Ó/gi,"O");
+                cadena = cadena.replace(/ú/gi,"u");
+                cadena = cadena.replace(/Ú/gi,"U");
+
+                return cadena;
+
+            };
+*/
+
 
             var twitterShare = e.currentTarget;
 
             var resultadoShare = document.getElementById('resultadoStmt').textContent;
+            var hice = 'Hice el test de Coyuntura peronista y me salió: "';
+            var podes = '" Podés hacerlo en http://bit.do/testperonista ';
 
-            var twitterWindow = window.open('https://twitter.com/intent/tweet?text=' + 'Hice el test de Coyuntura política peronista y me salió : "' + resultadoShare + '". Podés hacerlo en http://bit.do/testperonista', 'twitter-popup', 'height=350,width=600');
+            resultadoShare = encodeURIComponent(resultadoShare);
+            hice = encodeURIComponent(hice);
+            podes = encodeURIComponent(podes);
+
+
+
+
+            var twitterWindow = window.open('https://twitter.com/intent/tweet?text=' + hice + resultadoShare + podes, 'twitter-popup', 'height=350,width=600');
             if (twitterWindow.focus) {
                 twitterWindow.focus();
             }
             return false;
         },
+
 
         facebook: function (e) {
 
