@@ -1,10 +1,11 @@
 <html>
+<head>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="UTF-8">
     <meta name="viewport" content='width=device-width, initial-scale=1'>
     <meta property="og:title" content="Test de Coyuntura Peronista">
     <meta property="og:description" content="¿Qué linea peronista te identifica?">
-    <meta property="og:image" content="thumbnail_image">
+    <meta property="og:image" content="http://peronismo.github.io/resources/img/wip2.png">
     <meta name="description" content="Test de coyuntura peronista: ¿Qué línea te identifica?">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     <link rel="stylesheet" href="resources/css/mystlyes.css">
@@ -12,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Asap:700|Montserrat" rel="stylesheet">
 
 
-    <title>Test peronista</title>
+    <title>Test de coyuntura peronista</title>
 
     <style>
 
@@ -35,7 +36,7 @@
 
 
     </style>
-</html>
+</head>
 
 
 <div id="app">
@@ -54,11 +55,13 @@
         </article>
     </div>
 
-<div id="buttonShare">
+<div id="buttonShare" class="has-text-centered">
+         <button id="testAgain" class="button is-large is-warning redo-share" onclick="location.reload()"><i class="fa fa-repeat"></i>&nbsp;Rehacer el test</button>
+         <button id="fb" class="button is-large is-link facebook-share" data-js="facebook-share" @click="facebook($event)"> <i class="fa fa-facebook"></i> &nbsp;Compartir en Facebook</button>
          <button id="tw" class="button is-large is-primary twitter-share" data-js="twitter-share" @click="twitter($event)"> <i class="fa fa-twitter"></i>&nbsp;Compartir en Twitter</button>
-         <button id="fb" class="button is-large is-link facebook-share" data-js="facebook-share" @click="facebook($event)"> <i class="fa fa-facebook"></i> &nbsp;Compartir en Facebook</button></div>
-
+</div>
 </section>
+
   <section id="resultado" class="container has-text-centered">
 
      <template v-if="primero=='Julio Bárbaro'">

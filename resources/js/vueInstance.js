@@ -751,7 +751,7 @@ var app = new Vue({
 
         },
 
-     /*   undo: function (event, pagina) {
+     undo: function (event, pagina) {
 //Coleccion de botonones escondidos re-aparecen
 
             var buttonsInvisible = document.getElementsByClassName('button');
@@ -819,7 +819,7 @@ var app = new Vue({
                 this.martinInsaurralde4 = 0;
             }
 
-        },*/
+        },
 //Calculo final
         final: function () {
             this.intro = true;

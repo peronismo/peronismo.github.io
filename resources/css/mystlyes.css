@@ -151,7 +151,7 @@
         margin: 0 auto !important;
         width: 100%;
     }
-    #fb, #tw {
+    #fb, #tw, #testAgain {
 
 
 
@@ -347,19 +347,15 @@
     }
 
 
-    #buttonShare{
 
-        max-width: 75%;
-        display: inline;
-        margin: 0 auto
-    }
-    .twitter-share, .facebook-share {
+    .twitter-share, .facebook-share, .redo-share {
 
 
         cursor: pointer;
         margin: 0 auto;
         display: inline !important;
-        max-width: 50%;
+        font-weight: bold;
+        font-size: 25px !important;
     }
 
 
