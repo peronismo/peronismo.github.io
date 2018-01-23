@@ -230,6 +230,7 @@
 
     body {
         background: url("../img/Peron-y-Evita-HD-2.jpg");
+        z-index: 5;
         background-size: cover !important;
         background-attachment: fixed;
     }
