@@ -19,7 +19,6 @@
     <meta name="description" content="Test de coyuntura peronista: ¿Qué línea te identifica?" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     <link rel="stylesheet" href="resources/css/mystlyes.css">
-    <link rel="stylesheet" href="resources/css/loader.css">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Asap:700|Montserrat" rel="stylesheet">
 
@@ -63,8 +62,7 @@
 <body>
 <script>document.body.className += ' fade-out';
 window.onload = function () {
-    setTimeout(remove,2500)
-    function remove (){document.body.classList.remove('fade-out')}
+  document.body.classList.remove('fade-out');
 }
 </script>
 <div id="app">
