@@ -1050,29 +1050,6 @@ var app = new Vue({
 
         twitter: function (e) {
 
-            /*      function getCleanedString(cadena){
-
-
-
-
-             // Eliminar acentos.
-             cadena = cadena.replace(/á/gi,"a");
-             cadena = cadena.replace(/Á/gi,"A");
-             cadena = cadena.replace(/é/gi,"e");
-             cadena = cadena.replace(/É/gi,"E");
-             cadena = cadena.replace(/í/gi,"i");
-             cadena = cadena.replace(/í/gi,"I");
-             cadena = cadena.replace(/ó/gi,"o");
-             cadena = cadena.replace(/Ó/gi,"O");
-             cadena = cadena.replace(/ú/gi,"u");
-             cadena = cadena.replace(/Ú/gi,"U");
-
-             return cadena;
-
-             };
-             */
-
-
             var twitterShare = e.currentTarget;
 
             var resultadoShare = document.getElementById('resultadoStmt').textContent;
