@@ -213,6 +213,11 @@
         font-family: Montserrat;
     }
 
+
+    #foot{
+
+
+    }
 }
 
 /************************************************DESKTOP******************************************/
@@ -450,6 +455,11 @@
         font-family: Montserrat;
     }
 
+    #foot{
+        background-color: #d2ebfc;
+        font-family: Asap;
+        color: black;
+    }
 
 }
 
