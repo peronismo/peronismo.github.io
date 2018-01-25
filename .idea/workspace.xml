@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="caf316d1-ba6f-4356-9ddc-8ecbfe142310" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/resources/js/vueInstance.js" afterPath="$PROJECT_DIR$/resources/js/vueInstance.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21199">
-              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="291">
+              <caret line="97" column="198" lean-forward="false" selection-start-line="97" selection-start-column="198" selection-end-line="97" selection-end-column="198" />
               <folding />
             </state>
           </provider>
@@ -34,14 +35,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vueInstance.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vueInstance.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="1082" column="50" lean-forward="false" selection-start-line="1082" selection-start-column="50" selection-end-line="1082" selection-end-column="50" />
+            <state relative-caret-position="537">
+              <caret line="1081" column="14" lean-forward="false" selection-start-line="1081" selection-start-column="14" selection-end-line="1081" selection-end-column="14" />
               <folding>
-                <marker date="1516895111453" expanded="true" signature="72:86" ph="..." />
-                <marker date="1516895111453" expanded="true" signature="117:129" ph="..." />
+                <marker date="1516899511851" expanded="true" signature="72:86" ph="..." />
+                <marker date="1516899511851" expanded="true" signature="117:129" ph="..." />
               </folding>
             </state>
           </provider>
@@ -121,8 +122,8 @@
         <option value="$PROJECT_DIR$/resources/css/loader.css" />
         <option value="$PROJECT_DIR$/resources/css/mystlyes.scss" />
         <option value="$PROJECT_DIR$/resources/css/mystlyes.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/resources/js/vueInstance.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -142,7 +143,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -165,6 +166,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,7 +189,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,15 +378,16 @@
       <workItem from="1516888911745" duration="1748000" />
       <workItem from="1516891232456" duration="790000" />
       <workItem from="1516892711756" duration="703000" />
-      <workItem from="1516894536725" duration="579000" />
+      <workItem from="1516894536725" duration="1086000" />
+      <workItem from="1516898048345" duration="831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="378307000" />
+    <option name="totallyTimeSpent" value="379645000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12604167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -525,13 +527,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/mystlyes.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
@@ -633,22 +635,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21199">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="537">
+          <caret line="1081" column="14" lean-forward="false" selection-start-line="1081" selection-start-column="14" selection-end-line="1081" selection-end-column="14" />
+          <folding>
+            <marker date="1516899511851" expanded="true" signature="72:86" ph="..." />
+            <marker date="1516899511851" expanded="true" signature="117:129" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="1082" column="50" lean-forward="false" selection-start-line="1082" selection-start-column="50" selection-end-line="1082" selection-end-column="50" />
-          <folding>
-            <marker date="1516895111453" expanded="true" signature="72:86" ph="..." />
-            <marker date="1516895111453" expanded="true" signature="117:129" ph="..." />
-          </folding>
+        <state relative-caret-position="291">
+          <caret line="97" column="198" lean-forward="false" selection-start-line="97" selection-start-column="198" selection-end-line="97" selection-end-column="198" />
+          <folding />
         </state>
       </provider>
     </entry>

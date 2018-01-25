@@ -1079,7 +1079,6 @@ var app = new Vue({
 
             FB.ui({
                 method: 'share',
-                mobile_iframe: true,
                 href: 'http://bit.do/testperonista',
                 quote: 'Hice el Test de coyuntura peronista y me salió: "' + resultadoShare2 + '"',
             }, function(response){});
