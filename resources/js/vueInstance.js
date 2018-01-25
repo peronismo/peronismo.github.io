@@ -1073,12 +1073,32 @@ var app = new Vue({
 
         facebook: function (e) {
 
+           switch (app.primero){
+
+               case 'Julio Bárbaro' : { var img = 'http://peronismo.github.com/resources/images/1.jpg';break;}
+               case 'Miguel Ángel Pichetto' : { var img = 'http://peronismo.github.com/resources/images/1.png';break;}
+               case 'Sergio Massa' : { var img = 'http://peronismo.github.com/resources/images/1.jpg';break;}
+               case 'Martín Insaurralde' : { var img = 'http://peronismo.github.com/resources/images/1.jpg';break;}
+               case 'Guillermo Moreno' : { var img = 'http://peronismo.github.com/resources/images/1.jpg';break;}
+               case 'Fernando "Chino" Navarro' : { var img = 'http://peronismo.github.com/resources/images/1.jpg';break;}
+               case 'Agustín "Chivo" Rossi' : { var img = 'http://peronismo.github.com/resources/images/1.jpg';break;}
+               case 'Andrés "Cuervo" Larroque' : { var img = 'http://peronismo.github.com/resources/images/1.jpg';break;}
+
+
+
+           }
+
             var facebookShare = e.currentTarget;
             var resultadoShare2 = document.getElementById('resultadoStmt').textContent;
 
             FB.ui({
                 method: 'share',
                 link: 'http://bit.do/testperonista',
+                action_properties: JSON.stringify({
+                    object: {
+
+                        'og:image': img
+                    },
                 quote: 'Hice el Test de coyuntura peronista y me salió: "' + resultadoShare2 + '"',
             }, function(response){});
 
