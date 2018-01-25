@@ -1073,7 +1073,7 @@ var app = new Vue({
 
         facebook: function (e) {
 
-           switch (app.primero){
+          /* switch (app.primero){
 
                case 'Julio Bárbaro' : { var img = 'http://peronismo.github.com/resources/images/1.jpg';break;}
                case 'Miguel Ángel Pichetto' : { var img = 'http://peronismo.github.com/resources/images/1.png';break;}
@@ -1086,7 +1086,7 @@ var app = new Vue({
 
 
 
-           }
+           }*/
 
             var facebookShare = e.currentTarget;
             var resultadoShare2 = document.getElementById('resultadoStmt').textContent;
