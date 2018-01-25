@@ -4,7 +4,6 @@
     <list default="true" id="caf316d1-ba6f-4356-9ddc-8ecbfe142310" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/resources/js/vueInstance.js" afterPath="$PROJECT_DIR$/resources/js/vueInstance.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,9 +17,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="97" column="198" lean-forward="false" selection-start-line="97" selection-start-column="198" selection-end-line="97" selection-end-column="198" />
-              <folding />
+            <state relative-caret-position="357">
+              <caret line="97" column="191" lean-forward="false" selection-start-line="97" selection-start-column="191" selection-end-line="97" selection-end-column="191" />
+              <folding>
+                <element signature="e#3779#3785#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,7 +39,7 @@
       <file leaf-file-name="vueInstance.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
+            <state relative-caret-position="551">
               <caret line="1081" column="14" lean-forward="false" selection-start-line="1081" selection-start-column="14" selection-end-line="1081" selection-end-column="14" />
               <folding>
                 <marker date="1516899511851" expanded="true" signature="72:86" ph="..." />
@@ -61,8 +62,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>desha</find>
-      <find>undo: f</find>
       <find>rever</find>
       <find>puede ser</find>
       <find>fa</find>
@@ -73,7 +72,6 @@
       <find>.pageload</find>
       <find>undo</find>
       <find>deshacer</find>
-      <find>faceb</find>
       <find>tw</find>
       <find>test</find>
       <find>twitt</find>
@@ -91,6 +89,9 @@
       <find>facebo</find>
       <find>larroque</find>
       <find>switc</find>
+      <find>faceb</find>
+      <find>face</find>
+      <find>fb</find>
     </findStrings>
     <replaceStrings>
       <replace>is-size-3-desktop</replace>
@@ -379,12 +380,12 @@
       <workItem from="1516891232456" duration="790000" />
       <workItem from="1516892711756" duration="703000" />
       <workItem from="1516894536725" duration="1086000" />
-      <workItem from="1516898048345" duration="831000" />
+      <workItem from="1516898048345" duration="2182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="379645000" />
+    <option name="totallyTimeSpent" value="380996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
@@ -460,7 +461,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#3779#3785#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -482,7 +485,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#3779#3785#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -497,7 +502,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#3779#3785#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -637,7 +644,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
+        <state relative-caret-position="551">
           <caret line="1081" column="14" lean-forward="false" selection-start-line="1081" selection-start-column="14" selection-end-line="1081" selection-end-column="14" />
           <folding>
             <marker date="1516899511851" expanded="true" signature="72:86" ph="..." />
@@ -648,9 +655,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="97" column="198" lean-forward="false" selection-start-line="97" selection-start-column="198" selection-end-line="97" selection-end-column="198" />
-          <folding />
+        <state relative-caret-position="357">
+          <caret line="97" column="191" lean-forward="false" selection-start-line="97" selection-start-column="191" selection-end-line="97" selection-end-column="191" />
+          <folding>
+            <element signature="e#3779#3785#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
