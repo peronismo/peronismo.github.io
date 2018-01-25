@@ -13,10 +13,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1716">
+            <state relative-caret-position="-6600">
               <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding />
             </state>
@@ -33,14 +33,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vueInstance.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vueInstance.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="1088" column="14" lean-forward="false" selection-start-line="1088" selection-start-column="14" selection-end-line="1088" selection-end-column="14" />
+            <state relative-caret-position="23650">
+              <caret line="1075" column="0" lean-forward="false" selection-start-line="1075" selection-start-column="0" selection-end-line="1075" selection-end-column="0" />
               <folding>
-                <marker date="1516892734978" expanded="true" signature="72:86" ph="..." />
-                <marker date="1516892734978" expanded="true" signature="117:129" ph="..." />
+                <marker date="1516893175619" expanded="true" signature="72:86" ph="..." />
+                <marker date="1516893175619" expanded="true" signature="117:129" ph="..." />
               </folding>
             </state>
           </provider>
@@ -141,7 +141,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -375,15 +375,15 @@
       <workItem from="1516738133884" duration="52000" />
       <workItem from="1516888911745" duration="1748000" />
       <workItem from="1516891232456" duration="790000" />
-      <workItem from="1516892711756" duration="26000" />
+      <workItem from="1516892711756" duration="518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377051000" />
+    <option name="totallyTimeSpent" value="377543000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12604167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -631,22 +631,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1716">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="23650">
+          <caret line="1075" column="0" lean-forward="false" selection-start-line="1075" selection-start-column="0" selection-end-line="1075" selection-end-column="0" />
+          <folding>
+            <marker date="1516893175619" expanded="true" signature="72:86" ph="..." />
+            <marker date="1516893175619" expanded="true" signature="117:129" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="1088" column="14" lean-forward="false" selection-start-line="1088" selection-start-column="14" selection-end-line="1088" selection-end-column="14" />
-          <folding>
-            <marker date="1516892734978" expanded="true" signature="72:86" ph="..." />
-            <marker date="1516892734978" expanded="true" signature="117:129" ph="..." />
-          </folding>
+        <state relative-caret-position="-6600">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
