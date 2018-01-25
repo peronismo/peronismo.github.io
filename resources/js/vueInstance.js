@@ -1073,14 +1073,40 @@ var app = new Vue({
 
         facebook: function (e) {
 
+            switch (app.primero){
+
+
+                case 'Julio Bárbaro' : {var imageurl = 'http://peronismo.github.io/resources/img/res1.jpg';break}
+                case 'Miguel Ángel Pichetto' : {var imageurl = 'http://peronismo.github.io/resources/img/res2.jpg';break}
+                case 'Sergio Massa' : {var imageurl = 'http://peronismo.github.io/resources/img/res3.jpg';break}
+                case 'Martín Insaurralde' : {var imageurl = 'http://peronismo.github.io/resources/img/res4.jpg';break}
+                case 'Guillermo Moreno' : {var imageurl = 'http://peronismo.github.io/resources/img/res5.jpg';break}
+                case 'Fernando Chino Navarro' : {var imageurl = 'http://peronismo.github.io/resources/img/res6.jpg';break}
+                case 'Agustín Chivo Rossi' : {var imageurl = 'http://peronismo.github.io/resources/img/res7.jpg';break}
+                case 'Andrés Cuervo Larroque': {var imageurl = 'http://peronismo.github.io/resources/img/res8.jpg';break}
+
+
+            }
+
 
             var facebookShare = e.currentTarget;
             var resultadoShare2 = document.getElementById('resultadoStmt').textContent;
 
             FB.ui({
-                method: 'share',
-                href: 'http://bit.do/testperonista',
-                quote: 'Hice el Test de coyuntura peronista y me salió: "' + resultadoShare2 + '"',
+                method: 'share_open_graph',
+                action_type: 'og.shares',
+
+
+                action_properties: JSON.stringify({
+                    object : {
+                        'og:url': 'http://bit.do/testperonista',
+                        'og:title':'Test de coyuntura peronista' ,
+                        'og:description': 'Hice el Test de coyuntura peronista y me salió: "' + resultadoShare2 + '"',
+                        'og:image': imageurl,
+                        'og:image:type':'image/jpg',
+
+                    }
+                })
             }, function(response){});
 
 
@@ -1088,4 +1114,3 @@ var app = new Vue({
     }
 
 });
-

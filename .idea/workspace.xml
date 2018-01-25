@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="caf316d1-ba6f-4356-9ddc-8ecbfe142310" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/resources/img/Thumbs.db" afterPath="$PROJECT_DIR$/resources/img/Thumbs.db" />
+      <change beforePath="$PROJECT_DIR$/resources/js/vueInstance.js" afterPath="$PROJECT_DIR$/resources/js/vueInstance.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="97" column="191" lean-forward="false" selection-start-line="97" selection-start-column="191" selection-end-line="97" selection-end-column="191" />
+            <state relative-caret-position="251">
+              <caret line="1032" column="20" lean-forward="false" selection-start-line="1032" selection-start-column="20" selection-end-line="1032" selection-end-column="20" />
               <folding>
                 <element signature="e#3779#3785#0" expanded="true" />
               </folding>
@@ -29,7 +30,7 @@
       <file leaf-file-name="mystlyes.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/css/mystlyes.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
+            <state relative-caret-position="10120">
               <caret line="460" column="8" lean-forward="false" selection-start-line="460" selection-start-column="8" selection-end-line="460" selection-end-column="8" />
               <folding />
             </state>
@@ -39,11 +40,11 @@
       <file leaf-file-name="vueInstance.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="1081" column="14" lean-forward="false" selection-start-line="1081" selection-start-column="14" selection-end-line="1081" selection-end-column="14" />
+            <state relative-caret-position="859">
+              <caret line="1115" column="3" lean-forward="false" selection-start-line="1115" selection-start-column="3" selection-end-line="1115" selection-end-column="3" />
               <folding>
-                <marker date="1516899511851" expanded="true" signature="72:86" ph="..." />
-                <marker date="1516899511851" expanded="true" signature="117:129" ph="..." />
+                <marker date="1516919414303" expanded="true" signature="72:86" ph="..." />
+                <marker date="1516919414303" expanded="true" signature="117:129" ph="..." />
               </folding>
             </state>
           </provider>
@@ -123,8 +124,8 @@
         <option value="$PROJECT_DIR$/resources/css/loader.css" />
         <option value="$PROJECT_DIR$/resources/css/mystlyes.scss" />
         <option value="$PROJECT_DIR$/resources/css/mystlyes.css" />
-        <option value="$PROJECT_DIR$/resources/js/vueInstance.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/resources/js/vueInstance.js" />
       </list>
     </option>
   </component>
@@ -144,7 +145,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -166,8 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,11 +189,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cremaCaramelo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -380,15 +381,19 @@
       <workItem from="1516891232456" duration="790000" />
       <workItem from="1516892711756" duration="703000" />
       <workItem from="1516894536725" duration="1086000" />
-      <workItem from="1516898048345" duration="2182000" />
+      <workItem from="1516898048345" duration="3246000" />
+      <workItem from="1516908438468" duration="79000" />
+      <workItem from="1516912815842" duration="72000" />
+      <workItem from="1516912900627" duration="36000" />
+      <workItem from="1516919265926" duration="716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="380996000" />
+    <option name="totallyTimeSpent" value="382963000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12604167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -636,7 +641,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/mystlyes.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
+        <state relative-caret-position="10120">
           <caret line="460" column="8" lean-forward="false" selection-start-line="460" selection-start-column="8" selection-end-line="460" selection-end-column="8" />
           <folding />
         </state>
@@ -644,19 +649,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="1081" column="14" lean-forward="false" selection-start-line="1081" selection-start-column="14" selection-end-line="1081" selection-end-column="14" />
+        <state relative-caret-position="859">
+          <caret line="1115" column="3" lean-forward="false" selection-start-line="1115" selection-start-column="3" selection-end-line="1115" selection-end-column="3" />
           <folding>
-            <marker date="1516899511851" expanded="true" signature="72:86" ph="..." />
-            <marker date="1516899511851" expanded="true" signature="117:129" ph="..." />
+            <marker date="1516919414303" expanded="true" signature="72:86" ph="..." />
+            <marker date="1516919414303" expanded="true" signature="117:129" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="97" column="191" lean-forward="false" selection-start-line="97" selection-start-column="191" selection-end-line="97" selection-end-column="191" />
+        <state relative-caret-position="251">
+          <caret line="1032" column="20" lean-forward="false" selection-start-line="1032" selection-start-column="20" selection-end-line="1032" selection-end-column="20" />
           <folding>
             <element signature="e#3779#3785#0" expanded="true" />
           </folding>
