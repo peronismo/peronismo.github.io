@@ -1080,11 +1080,6 @@ var app = new Vue({
             FB.ui({
                 method: 'share',
                 link: 'http://bit.do/testperonista',
-                action_properties: JSON.stringify({
-                    object: {
-
-                        'og:image': img
-                    },
                 quote: 'Hice el Test de coyuntura peronista y me salió: "' + resultadoShare2 + '"',
             }, function(response){});
 

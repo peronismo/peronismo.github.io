@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-6600">
@@ -33,14 +33,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vueInstance.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="vueInstance.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23650">
-              <caret line="1075" column="0" lean-forward="false" selection-start-line="1075" selection-start-column="0" selection-end-line="1075" selection-end-column="0" />
+            <state relative-caret-position="603">
+              <caret line="1082" column="13" lean-forward="false" selection-start-line="1082" selection-start-column="13" selection-end-line="1082" selection-end-column="13" />
               <folding>
-                <marker date="1516893175619" expanded="true" signature="72:86" ph="..." />
-                <marker date="1516893175619" expanded="true" signature="117:129" ph="..." />
+                <marker date="1516893336425" expanded="true" signature="72:86" ph="..." />
+                <marker date="1516893336425" expanded="true" signature="117:129" ph="..." />
               </folding>
             </state>
           </provider>
@@ -375,12 +375,12 @@
       <workItem from="1516738133884" duration="52000" />
       <workItem from="1516888911745" duration="1748000" />
       <workItem from="1516891232456" duration="790000" />
-      <workItem from="1516892711756" duration="518000" />
+      <workItem from="1516892711756" duration="622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377543000" />
+    <option name="totallyTimeSpent" value="377647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
@@ -631,22 +631,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23650">
-          <caret line="1075" column="0" lean-forward="false" selection-start-line="1075" selection-start-column="0" selection-end-line="1075" selection-end-column="0" />
-          <folding>
-            <marker date="1516893175619" expanded="true" signature="72:86" ph="..." />
-            <marker date="1516893175619" expanded="true" signature="117:129" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6600">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/vueInstance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="1082" column="13" lean-forward="false" selection-start-line="1082" selection-start-column="13" selection-end-line="1082" selection-end-column="13" />
+          <folding>
+            <marker date="1516893336425" expanded="true" signature="72:86" ph="..." />
+            <marker date="1516893336425" expanded="true" signature="117:129" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
