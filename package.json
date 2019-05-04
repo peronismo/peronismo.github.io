@@ -1,0 +1,36 @@
+{
+  "name": "peronismo.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.23.1",
+    "vue-loader": "^14.2.2",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.2",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --color --progress --config config/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peronismo/peronismo.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peronismo/peronismo.github.io/issues"
+  },
+  "homepage": "https://github.com/peronismo/peronismo.github.io#readme"
+}

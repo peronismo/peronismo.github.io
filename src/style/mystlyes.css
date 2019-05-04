@@ -1,0 +1,475 @@
+@media only screen and (max-width:768px){
+
+    html{
+
+        background-color: #209cee;
+    }
+
+    [v-cloak] {
+        display: none;
+    }
+
+  body{
+
+
+   background-image: url("../img/backMobile.png");
+
+
+    background-position: center;
+    background-repeat: repeat;
+  }
+
+
+    #abajo a{
+
+        color: #ffdd57;
+
+    }
+
+    #abajo{
+
+        text-align: center !important;
+    }
+
+    #intro{
+
+        background-image: url("../img/hero1.jpg");
+        background-size: cover;
+    }
+
+
+
+    .columns{
+        border: solid 3px black;
+        border-radius: 5px;
+        margin-top: 50px;
+        background-color: rgba(255,255,255, 0.8);
+        color: black;
+        margin-left: -5px;
+        margin-right: -5px;
+
+    }
+
+
+    .escudo {
+
+        color: #e00;
+        -webkit-transition:all 3s ease-in;
+        -webkit-animation: latidos 3s infinite;
+    }
+
+    #escudo:before, #heart:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background: hsl(0,50%,50%);
+        border-radius: 50px 50px 0 0;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+    .escudo:after {
+        left: 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        -o-transform-origin: 100% 100%;
+        transform-origin :100% 100%;
+    }
+
+    .pasoAtras {
+
+        margin: 0 auto !important;
+        cursor: pointer !important;
+        margin-top: 15px !important;
+        display: none;
+    }
+
+
+    #ayuda .message{
+
+        background-color: rgba(255,255,255,0.8);
+        font-family: Asap;
+    }
+
+    /* Heart beat animation */
+    @keyframes beat{
+        to { transform: scale(1.1); }
+    }
+
+    @-webkit-keyframes latidos {
+        0% { -webkit-transform: scale(1); }
+        8% { -webkit-transform: scale(0.7);  }
+        17% { -webkit-transform: scale(1); }
+        25% { -webkit-transform: scale(0.7); }
+        87.5% { -webkit-transform: scale(0.7); }
+        100%  { -webkit-transform: scale(1); }
+    }
+
+
+    #res{
+
+        background-image: url("../img/imagenRes.jpg");
+        font-family: Asap;
+        text-align: center;
+    }
+
+    #tituloRes{
+        margin: 0 auto;
+        color: whitesmoke
+    }
+
+
+
+
+    #resultadoCuadro{
+
+    background-color: rgba(255,255,255, 0.8);
+    text-align: center;
+}
+
+
+    #buttonShare{
+
+
+        display: inline;
+        margin: 0 auto !important;
+        width: 100%;
+    }
+    #fb, #tw, #testAgain {
+
+
+
+        margin: 0 auto !important;
+        display: inline !important;
+        width: 100%;
+
+    }
+    .button{
+
+        display: flex;
+        font-weight: bolder;
+        background-color: whitesmoke;
+
+
+    }
+
+    .button:active {
+
+        box-shadow: 0px 0px 2px 0.5px #aaa;
+        border: 0.1em solid rgba(0,0,0, 0.8);
+        background-color: rgba(255, 221, 87, 0.85);
+        transition: 0.3s;
+
+    }
+
+    #headerModal1, #headerModal2, #headerModal3, #headerModal4, #headerModal5, #headerModal6, #headerModal7, #headerModal8{
+        background-color: #209cee;
+
+    }
+    #tituloModal1, #tituloModal2,#tituloModal3, #tituloModal4,#tituloModal5, #tituloModal6,#tituloModal7, #tituloModal8 {
+
+        color: whitesmoke;
+        font-weight: bold;
+
+    }
+    #cuerpoModal1 > img, #cuerpoModal2 > img, #cuerpoModal3 > img, #cuerpoModal4 > img, #cuerpoModal5 > img, #cuerpoModal6 > img, #cuerpoModal7 > img, #cuerpoModal8 > img {
+
+        border-radius: 5px;
+        border: 3px solid #209cee;
+        max-width: 200px !important;
+
+    }
+    #cuerpoModal1 > p, #cuerpoModal2 > p, #cuerpoModal3 > p, #cuerpoModal4 > p, #cuerpoModal5 > p, #cuerpoModal6 > p, #cuerpoModal7 > p, #cuerpoModal8 > p {
+        color: black;
+
+
+    }
+    #bio1, #bio2, #bio3, #bio4, #bio5, #bio6, #bio7, #bio8{
+
+        margin: 20px auto;
+        border-radius: 5px;
+        padding: 10px 1px 5px 1px;
+    }
+
+    #contenedorMusica{
+
+        font-weight: bolder;
+        font-family: Montserrat;
+    }
+
+
+    #foot{
+
+
+    }
+}
+
+/************************************************DESKTOP******************************************/
+
+@media only screen and (min-width:768px) {
+    html {
+
+        background-color: #209cee;
+
+    }
+
+
+
+    body  {
+        background: url("../img/Peron-y-Evita-HD-2.jpg");
+        background-size: cover !important;
+        background-attachment: fixed;
+    }
+    .modal-card { margin: 0 20px !important;overflow: auto }
+
+    #abajo a{
+
+        color: #209cee;
+        margin-right: 50px;
+
+    }
+
+    #abajo a:hover{
+
+        color: #ffdd57;
+
+    }
+ #intro{
+
+     background-image: url("../img/hero1.jpg");
+     background-size: cover;
+
+ }
+
+
+  #help{
+
+     background-color: rgba(255,255,255, 0.8);
+     font-family: Asap;
+
+ }
+
+    #q1,#q2,#q3,#q4{
+       font-family: Montserrat;
+    }
+
+    #help li{
+        font-family: Asap;
+    }
+
+    #comoFunciona{
+        font-family:Asap
+    }
+
+
+    #contenidoAyuda{
+
+    color: black;
+
+}
+
+    .escudo {
+
+
+        -webkit-transition:all 3s ease;
+        margin-top: 70px;
+        -webkit-animation: latidos 3s infinite;
+    }
+
+    #escudo:before, #heart:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background: hsl(0,50%,50%);
+        border-radius: 50px 50px 0 0;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+    .escudo:after {
+        left: 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        -o-transform-origin: 100% 100%;
+        transform-origin :100% 100%;
+    }
+
+
+    /* Heart beat animation */
+    @keyframes beat{
+        to { transform: scale(1.1); }
+    }
+
+    @-webkit-keyframes latidos {
+        0% { -webkit-transform: scale(1); }
+        8% { -webkit-transform: scale(0.7);  }
+        17% { -webkit-transform: scale(1.2); }
+        25% { -webkit-transform: scale(0.7); }
+        87.5% { -webkit-transform: scale(0.7); }
+        100%  { -webkit-transform: scale(1); }
+    }
+
+    .pasoAtras {
+
+        margin: 0 auto !important;
+        cursor: pointer !important;
+        margin-top: 15px !important;
+        display: none;
+    }
+
+
+
+    .twitter-share, .facebook-share, .redo-share {
+
+
+        cursor: pointer;
+        margin: 0 auto;
+        display: inline !important;
+        font-weight: bold;
+        font-size: 25px !important;
+    }
+
+
+
+
+
+    .button {
+
+       display: flex;
+       font-family: Montserrat;
+       font-weight: bolder;
+       background-color: whitesmoke;
+
+
+    }
+    .button:hover {
+
+       box-shadow: 0px 0px 2px 0.5px #aaa;
+       border: 0.1em solid rgba(0,0,0, 0.8);
+       background-color: rgba(255, 221, 87, 0.85);
+       transition: 0.3s;
+
+    }
+
+
+
+
+    .columns {
+
+        border: solid 4px black;
+        border-radius: 10px;
+        margin-top: 50px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        text-align: center;
+
+    }
+
+    #res{
+    
+    background-image: url("../img/imagenRes.jpg");
+    font-family: Asap;
+
+
+}
+    #tituloRes{
+      color: whitesmoke}
+
+
+#resultadoCuadro{
+
+    background-color: rgba(255,255,255, 0.8);
+    text-align: center;
+}
+
+
+    #headerModal1, #headerModal2, #headerModal3, #headerModal4, #headerModal5, #headerModal6, #headerModal7, #headerModal8 {
+        background-color: #209cee;
+
+
+    }
+
+    #tituloModal1, #tituloModal2, #tituloModal3, #tituloModal4, #tituloModal5, #tituloModal6, #tituloModal7, #tituloModal8 {
+
+        color: whitesmoke;
+        font-weight: bold;
+        font-family: Montserrat;
+    }
+    #cuerpoModal1 > img, #cuerpoModal2 > img, #cuerpoModal3 > img, #cuerpoModal4 > img, #cuerpoModal5 > img, #cuerpoModal6 > img, #cuerpoModal7 > img, #cuerpoModa8 > img  {
+
+        border-radius: 5px;
+        border: 3px solid #209cee;
+        max-width: 400px;
+
+    }
+    #cuerpoModal1 > p, #cuerpoModal2 > p, #cuerpoModal3 > p, #cuerpoModal4 > p, #cuerpoModal5 > p, #cuerpoModal6 > p, #cuerpoModal7 > p, #cuerpoModal8 > p{
+
+        color: black;
+        font-family: Montserrat;
+
+
+    }
+
+
+    #bio1, #bio2, #bio3, #bio4, #bio5, #bio6, #bio7, #bio8{
+
+        margin: 20px auto;
+        border-radius: 5px;
+        padding: 10px 5px;
+    }
+    #contenedorMusica{
+
+
+        font-family: Montserrat;
+    }
+
+    #foot{
+        background-color: #d2ebfc;
+        font-family: Asap;
+        color: black;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
